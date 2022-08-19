@@ -1,0 +1,38 @@
+﻿subcategory;category
+linear regression;regression
+lasso regression;regression
+ridge regression;regression
+svr;regression
+logistic regression;classification
+svc;classification
+naive bayes;classification
+knn;classification
+k nearest neighbors;classification
+k means;clustering
+spectral clustering;clustering
+hca;clustering
+hierarchical cluster analysis;clustering
+chameleon;clustering
+ap;clustering
+affinity propagation;clustering
+self organising map;clustering
+Density Based Spatial Clustering of Applications with Noise;clustering
+DBSCAN;clustering
+semantic segmentation;computer vision
+instance segmentation;computer vision
+region based segmentation;computer vision
+edge detection segmentation;computer vision
+object detection;computer vision
+image recognition;computer vision
+facial recognition;computer vision
+feature matching;computer vision
+machine translation;nlp
+sentiment analysis;nlp
+question answering;nlp
+information retrieval;nlp
+speech recognition;nlp
+text summarisation;nlp
+text generation;nlp
+q learning;reinforcement learning
+markov decision;reinforcement learning
+multi armed bandits;reinforcement learning
