@@ -2,11 +2,14 @@
 linear regression;regression
 lasso regression;regression
 ridge regression;regression
+support vector machine regressor;regression
 svr;regression
 logistic regression;classification
+support vector machine classifier;classification
 svc;classification
 naive bayes;classification
 knn;classification
+decision tree classifier;classification
 k nearest neighbors;classification
 k means;clustering
 spectral clustering;clustering
@@ -17,6 +20,7 @@ ap;clustering
 affinity propagation;clustering
 self organising map;clustering
 Density Based Spatial Clustering of Applications with Noise;clustering
+clustering;clustering
 DBSCAN;clustering
 semantic segmentation;computer vision
 instance segmentation;computer vision
@@ -25,7 +29,9 @@ edge detection segmentation;computer vision
 object detection;computer vision
 image recognition;computer vision
 facial recognition;computer vision
+image classification;computer vision
 feature matching;computer vision
+computer vision;computer vision
 machine translation;nlp
 sentiment analysis;nlp
 question answering;nlp
@@ -33,6 +39,10 @@ information retrieval;nlp
 speech recognition;nlp
 text summarisation;nlp
 text generation;nlp
+nlp;nlp
+named entity recognition;nlp
 q learning;reinforcement learning
 markov decision;reinforcement learning
 multi armed bandits;reinforcement learning
+reinforcement learning;reinforcement learning
+geospatial;geospatial analysis
