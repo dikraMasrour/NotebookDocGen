@@ -37,16 +37,15 @@ text summarisation;nlp
 text generation;nlp
 mbart;nlp
 nlp;nlp
-nltk;nlp
+nltk spacy gensim;nlp
 huggingface;nlp
-gensim;nlp
 marianmt;nlp
-corenlp;nlp
 bleu;nlp
-t5model;nlp
-skipgram;nlp
-spacy;nlp
-bert word2vec glove tfidf;nlp
+bert word2vec glove;nlp
+skipgram;nlp 
+bagofwords;nlp
+fasttext;nlp
+tfidf;nlp
 tfagent;reinforcement learning
 ppo1;reinforcement learning
 ppo;reinforcement learning
