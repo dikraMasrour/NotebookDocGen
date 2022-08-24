@@ -39,8 +39,18 @@ information retrieval;nlp
 speech recognition;nlp
 text summarisation;nlp
 text generation;nlp
+mbart;nlp
 nlp;nlp
 nltk;nlp
+huggingface;nlp
+gensim;nlp
+marianmt;nlp
+corenlp;nlp
+bleu;nlp
+tf-idf;nlp
+t5model;nlp
+skipgram;nlp
+word2vec;nlp
 spacy;nlp
 named entity recognition;nlp
 tfagent;reinforcement learning
