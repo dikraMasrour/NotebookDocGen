@@ -16,6 +16,7 @@ spectral clustering;clustering
 hca;clustering
 hierarchical cluster analysis;clustering
 chameleon;clustering
+ap;clustering
 affinity propagation;clustering
 self organising map;clustering
 Density Based Spatial Clustering of Applications with Noise;clustering
@@ -39,9 +40,18 @@ speech recognition;nlp
 text summarisation;nlp
 text generation;nlp
 nlp;nlp
+nltk;nlp
+spacy;nlp
 named entity recognition;nlp
-q learning;reinforcement learning
+tfagent;reinforcement learning
+ppo1;reinforcement learning
+ppo;reinforcement learning
+stablebaselines;reinforcement learning
+a2c;reinforcement learning
+dqn;reinforcement learning
+trpo;reinforcement learning
+sarsa;reinforcement learning
+ddpg;reinforcement learning
+qlearning;reinforcement learning
 markov decision;reinforcement learning
-multi armed bandits;reinforcement learning
 reinforcement learning;reinforcement learning
-geospatial;geospatial analysis
