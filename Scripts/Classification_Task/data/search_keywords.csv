@@ -42,44 +42,47 @@ nasnet;computer vision
 yolo;computer vision
 deeplab;computer vision
 pytorch;computer vision
-machine translation;nlp
 sentiment analysis;nlp
 speech recognition;nlp
-text summarisation;nlp
-text generation;nlp
+encoder decoder nlp;nlp
 mbart;nlp
 nlp;nlp
 nltk spacy gensim;nlp
 huggingface;nlp
+<<<<<<< HEAD
 marianmt;nlp
 bleu;nlp
 tf-idf;nlp
 t5model;nlp
 skipgram;nlp
 word2vec;nlp
+=======
+>>>>>>> b42ca8285b1ce94e858f697ca85f436d158ea707
 spacy;nlp
-named entity recognition;nlp
-bert;nlp
-word2vec;nlp
-cbow;nlp
 fasttext;nlp
 textblob;nlp
 autonlp;nlp
-roberta;nlp
 xlm;nlp
 pegasus;nlp
 electra;nlp
 gpt;nlp
+bert roberta;nlp 
+word2vec;nlp
 glove;nlp
+<<<<<<< HEAD
 bert word2vec glove;nlp
+=======
+>>>>>>> b42ca8285b1ce94e858f697ca85f436d158ea707
 skipgram;nlp 
-bagofwords;nlp
+bagofwords cbow;nlp
 fasttext;nlp
 tfidf;nlp
+<<<<<<< HEAD
 chatbot;nlp
 tfagent;reinforcement learning
+=======
+>>>>>>> b42ca8285b1ce94e858f697ca85f436d158ea707
 ppo1;reinforcement learning
-ppo;reinforcement learning
 stablebaselines;reinforcement learning
 a2c;reinforcement learning
 dqn;reinforcement learning
