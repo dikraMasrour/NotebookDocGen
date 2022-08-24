@@ -34,7 +34,7 @@ machine translation;nlp
 sentiment analysis;nlp
 speech recognition;nlp
 text summarisation;nlp
-text generation;nlp
+encoder decoder nlp;nlp
 mbart;nlp
 nlp;nlp
 nltk spacy gensim;nlp
