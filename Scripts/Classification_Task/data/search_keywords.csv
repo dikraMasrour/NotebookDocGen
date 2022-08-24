@@ -48,9 +48,18 @@ skipgram;nlp
 word2vec;nlp
 spacy;nlp
 named entity recognition;nlp
-bert; nlp
-word2vec; nlp
-glove; nlp
+bert;nlp
+word2vec;nlp
+cbow;nlp
+fasttext;nlp
+textblob;nlp
+autonlp;nlp
+roberta;nlp
+xlm;nlp
+pegasus;nlp
+electra;nlp
+gpt;nlp
+glove;nlp
 tfagent;reinforcement learning
 ppo1;reinforcement learning
 ppo;reinforcement learning
