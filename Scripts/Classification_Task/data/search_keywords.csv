@@ -28,8 +28,7 @@ object detection;computer vision
 image recognition;computer vision
 facial recognition;computer vision
 image classification;computer vision
-feature matching;computer vision
-computer vision;computer vision
+pytorch;computer vision
 machine translation;nlp
 sentiment analysis;nlp
 speech recognition;nlp
@@ -53,4 +52,4 @@ sarsa;reinforcement learning
 ddpg;reinforcement learning
 qlearning;reinforcement learning
 markov decision;reinforcement learning
-reinforcement learning;reinforcement learning
+reinforcement;reinforcement learning
