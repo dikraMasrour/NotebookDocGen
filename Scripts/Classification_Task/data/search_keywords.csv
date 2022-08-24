@@ -2,7 +2,6 @@
 linear regression;regression
 lasso regression;regression
 ridge regression;regression
-support vector machine regressor;regression
 svr;regression
 logistic regression;classification
 support vector machine classifier;classification
@@ -15,7 +14,6 @@ k means;clustering
 spectral clustering;clustering
 hca;clustering
 hierarchical cluster analysis;clustering
-chameleon;clustering
 ap;clustering
 affinity propagation;clustering
 self organising map;clustering
@@ -30,12 +28,9 @@ object detection;computer vision
 image recognition;computer vision
 facial recognition;computer vision
 image classification;computer vision
-feature matching;computer vision
-computer vision;computer vision
+pytorch;computer vision
 machine translation;nlp
 sentiment analysis;nlp
-question answering;nlp
-information retrieval;nlp
 speech recognition;nlp
 text summarisation;nlp
 text generation;nlp
@@ -53,6 +48,9 @@ skipgram;nlp
 word2vec;nlp
 spacy;nlp
 named entity recognition;nlp
+bert; nlp
+word2vec; nlp
+glove; nlp
 tfagent;reinforcement learning
 ppo1;reinforcement learning
 ppo;reinforcement learning
@@ -64,4 +62,4 @@ sarsa;reinforcement learning
 ddpg;reinforcement learning
 qlearning;reinforcement learning
 markov decision;reinforcement learning
-reinforcement learning;reinforcement learning
+reinforcement;reinforcement learning
