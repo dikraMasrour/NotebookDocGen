@@ -27,6 +27,7 @@ edge detection segmentation;computer vision
 object detection;computer vision
 image recognition;computer vision
 facial recognition;computer vision
+face object yolo;computer vision
 image classification;computer vision
 pytorch;computer vision
 machine translation;nlp
@@ -42,15 +43,10 @@ gensim;nlp
 marianmt;nlp
 corenlp;nlp
 bleu;nlp
-tf-idf;nlp
 t5model;nlp
 skipgram;nlp
-word2vec;nlp
 spacy;nlp
-named entity recognition;nlp
-bert; nlp
-word2vec; nlp
-glove; nlp
+bert word2vec glove tfidf;nlp
 tfagent;reinforcement learning
 ppo1;reinforcement learning
 ppo;reinforcement learning
