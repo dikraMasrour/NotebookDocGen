@@ -1,7 +1,17 @@
 ﻿subcategory;category
 linear regression;regression
 lasso regression;regression
+randomforestregression;regression
 ridge regression;regression
+XGBRegressor;regression
+GradientBoostingRegressor;regression
+gpr;regression
+mars-regression;regression
+regressiontree;regression
+elasticnet;regression
+olsregression;regression
+plsregression;regression
+mae-mse-r2;regression
 svr;regression
 logistic regression;classification
 support vector machine classifier;classification
