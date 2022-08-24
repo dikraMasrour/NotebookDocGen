@@ -14,21 +14,29 @@ k means;clustering
 spectral clustering;clustering
 hca;clustering
 hierarchical cluster analysis;clustering
-ap;clustering
 affinity propagation;clustering
 self organising map;clustering
-Density Based Spatial Clustering of Applications with Noise;clustering
 clustering;clustering
+fcm;clustering
+fuzzy-c-means;clustering
+agglomerativeclustering;clustering
+meanshift;clustering
+gaussianmixture;clustering
+birch;clustering
+dbclasd;clustering
+denclue;clustering
+minibatchkmeans;clustering
+kmedoids;clustering
+kmodes;clustering
+cure-clustering;clustering
+optics-clustering;clustering
 DBSCAN;clustering
-semantic segmentation;computer vision
-instance segmentation;computer vision
-region based segmentation;computer vision
-edge detection segmentation;computer vision
-object detection;computer vision
-image recognition;computer vision
-facial recognition;computer vision
-face object yolo;computer vision
-image classification;computer vision
+semanticsegmentation;computer vision
+instancesegmentation;computer vision
+edge-detection-box;computer vision
+objectdetection;computer vision
+facial-image-recognition;computer vision
+imageclassification;computer vision
 opencv;computer vision
 vgg;computer vision
 openvino;computer vision
