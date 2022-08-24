@@ -29,6 +29,18 @@ image recognition;computer vision
 facial recognition;computer vision
 face object yolo;computer vision
 image classification;computer vision
+opencv;computer vision
+vgg;computer vision
+openvino;computer vision
+resnet50;computer vision
+efficientnet;computer vision
+mobilenetv2;computer vision
+inceptionv3;computer vision
+unet;computer vision
+fasterrcnn;computer vision
+nasnet;computer vision
+yolo;computer vision
+deeplab;computer vision
 pytorch;computer vision
 machine translation;nlp
 sentiment analysis;nlp
@@ -41,7 +53,6 @@ nltk spacy gensim;nlp
 huggingface;nlp
 marianmt;nlp
 bleu;nlp
-<<<<<<< HEAD
 tf-idf;nlp
 t5model;nlp
 skipgram;nlp
@@ -60,13 +71,12 @@ pegasus;nlp
 electra;nlp
 gpt;nlp
 glove;nlp
-=======
 bert word2vec glove;nlp
 skipgram;nlp 
 bagofwords;nlp
 fasttext;nlp
 tfidf;nlp
->>>>>>> 36176dcca365f9247a671dcb7f477faca100db3f
+chatbot;nlp
 tfagent;reinforcement learning
 ppo1;reinforcement learning
 ppo;reinforcement learning
