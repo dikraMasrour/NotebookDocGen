@@ -27,6 +27,7 @@ edge detection segmentation;computer vision
 object detection;computer vision
 image recognition;computer vision
 facial recognition;computer vision
+face object yolo;computer vision
 image classification;computer vision
 pytorch;computer vision
 machine translation;nlp
@@ -36,12 +37,11 @@ text summarisation;nlp
 text generation;nlp
 mbart;nlp
 nlp;nlp
-nltk;nlp
+nltk spacy gensim;nlp
 huggingface;nlp
-gensim;nlp
 marianmt;nlp
-corenlp;nlp
 bleu;nlp
+<<<<<<< HEAD
 tf-idf;nlp
 t5model;nlp
 skipgram;nlp
@@ -60,6 +60,13 @@ pegasus;nlp
 electra;nlp
 gpt;nlp
 glove;nlp
+=======
+bert word2vec glove;nlp
+skipgram;nlp 
+bagofwords;nlp
+fasttext;nlp
+tfidf;nlp
+>>>>>>> 36176dcca365f9247a671dcb7f477faca100db3f
 tfagent;reinforcement learning
 ppo1;reinforcement learning
 ppo;reinforcement learning
