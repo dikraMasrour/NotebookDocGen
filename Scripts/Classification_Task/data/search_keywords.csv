@@ -2,7 +2,6 @@
 linear regression;regression
 lasso regression;regression
 ridge regression;regression
-support vector machine regressor;regression
 svr;regression
 logistic regression;classification
 support vector machine classifier;classification
