@@ -41,11 +41,32 @@ nltk spacy gensim;nlp
 huggingface;nlp
 marianmt;nlp
 bleu;nlp
+<<<<<<< HEAD
+tf-idf;nlp
+t5model;nlp
+skipgram;nlp
+word2vec;nlp
+spacy;nlp
+named entity recognition;nlp
+bert;nlp
+word2vec;nlp
+cbow;nlp
+fasttext;nlp
+textblob;nlp
+autonlp;nlp
+roberta;nlp
+xlm;nlp
+pegasus;nlp
+electra;nlp
+gpt;nlp
+glove;nlp
+=======
 bert word2vec glove;nlp
 skipgram;nlp 
 bagofwords;nlp
 fasttext;nlp
 tfidf;nlp
+>>>>>>> 36176dcca365f9247a671dcb7f477faca100db3f
 tfagent;reinforcement learning
 ppo1;reinforcement learning
 ppo;reinforcement learning
