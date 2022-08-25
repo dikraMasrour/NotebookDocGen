@@ -5,7 +5,6 @@ randomforestregression;regression
 ridge regression;regression
 XGBRegressor;regression
 GradientBoostingRegressor;regression
-gpr;regression
 mars-regression;regression
 regressiontree;regression
 elasticnet;regression
@@ -25,7 +24,7 @@ k nearest neighbors;classification
 k means;clustering
 spectral clustering;clustering
 hca;clustering
-hierarchical cluster analysis;clustering
+hierarchical cluster analysis;clusterings
 affinity propagation;clustering
 self organising map;clustering
 clustering;clustering
