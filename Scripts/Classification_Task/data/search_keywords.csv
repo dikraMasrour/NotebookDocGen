@@ -69,9 +69,8 @@ nlp;nlp
 nltk spacy gensim;nlp
 huggingface;nlp
 marianmt;nlp
-bleu;nlp
+bleu_score;nlp
 t5model;nlp
-spacy;nlp
 textblob;nlp
 autonlp;nlp
 xlm;nlp
