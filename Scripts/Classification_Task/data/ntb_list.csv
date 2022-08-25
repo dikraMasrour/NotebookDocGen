@@ -435,7 +435,6 @@
 433,Jigsaw Naive Bayes AND Ridge Regression Explained,ridge regression,regression
 434,Advance Regression- Regularization (Ridge & Lasso),ridge regression,regression
 435,Head Start for Data Scientist,ridge regression,regression
-436,NLP Getting Started Tutorial,ridge regression,regression
 437,Ubiquant Market Prediction with Ridge Regression,ridge regression,regression
 438,House Price Prediction 🏡,ridge regression,regression
 439,xgboost + Ridge regression - 0.83,ridge regression,regression
@@ -497,7 +496,7 @@
 495,PCA and Regression,ridge regression,regression
 496,More Effective Ridge LGBM Script (LB 0.44341) - 2,ridge regression,regression
 497,Predicting House Prices with Regression,ridge regression,regression
-498,RAPIDS - Genetic Algorithm KNN - [CV 0.01840],ridge regression,regression
+498,RAPIDS - Genetic Algorithm KNN - [CV 0.01840],knn,classification
 499,Tutorial Part 2: Model Building using the Metadata,ridge regression,regression
 500,Ridge Regression on climate data,ridge regression,regression
 501,WiDS Datathon 2021: RAPIDS+XGB+LightGBM,ridge regression,regression
@@ -787,6 +786,7 @@
 785,"Time Series -The various steps ",gpr,regression
 786,New_Colab_Features,gpr,regression
 787,showing up in medical appointments,gpr,regression
+<<<<<<< HEAD
 788,Exercise: Trend,mars-regression,regression
 789,🚀 Spaceship Titanic: A complete guide 🏆,mars-regression,regression
 790,Awesome ML and Text Classification - Movie Reviews,mars-regression,regression
@@ -936,6 +936,8 @@
 934,Rossman - Regression - Correction,mars-regression,regression
 935,Fork of Fork of Kaggle 2017 Survey Results,mars-regression,regression
 936,spacy_readability,mars-regression,regression
+=======
+>>>>>>> 3f94cf770e422ed4720124435c9758844e7cd3e0
 937,pga-tour-analysis-by-gam,regressiontree,regression
 938,Explainable Boosting machines for Tabular data,regressiontree,regression
 939,sklearn boston house-prices RegressionTree,regressiontree,regression
@@ -1727,7 +1729,10 @@
 1725,Heart Disease - Automatic AdvEDA & FE & 20 models,perceptron,classification
 1726,Different Algorithms and Basic Data Analysis,perceptron,classification
 1727,Titanic to beginner,perceptron,classification
+<<<<<<< HEAD
 1728," TimeSeries Data - Multilayer Perceptron - Keras",perceptron,classification
+=======
+>>>>>>> 3f94cf770e422ed4720124435c9758844e7cd3e0
 1729,Customer churn prediction: Telecom Churn Dataset,perceptron,classification
 1730,Iris Perceptron Classification,perceptron,classification
 1731,perceptron (90%),perceptron,classification
@@ -2206,7 +2211,7 @@
 2204,Naive Bayes Classifier from scratch,naive bayes,classification
 2205,Heart Attack Prediction Using Different ML Models,naive bayes,classification
 2206,Feature Engineering-Naive Bayes with Bag of Words,naive bayes,classification
-2207,Sentiment Analysis using LR & Naive Bayes,naive bayes,classification
+2207,Sentiment Analysis using LR & Naive Bayes,sentiment analysis,nlp
 2208,Minimal LSTM + NB-SVM baseline ensemble,naive bayes,classification
 2209,"Naive Bayes rating classification ",naive bayes,classification
 2210,"NCI Thesaurus & Naive Bayes (vs RF, GBM, GLM & DL)",naive bayes,classification
@@ -3000,7 +3005,7 @@
 2998,EDA & Customer Segmentation with Clustering,spectral clustering,clustering
 2999,Make your soccer club and find similar players,spectral clustering,clustering
 3000,World Happiness Analysis,spectral clustering,clustering
-3001,NLP Capstone v2,spectral clustering,clustering
+3001,NLP Capstone v2,text classification,nlp
 3002,Models to Improve Customer Retention,spectral clustering,clustering
 3003,R : Challenge of 100+ Visualization in R,spectral clustering,clustering
 3004,Catboost classifier for astronomical objects,spectral clustering,clustering
@@ -3234,7 +3239,7 @@
 3232,Online Retail (Clustering),hierarchical cluster analysis,clustering
 3233,Analysis of aggregated item series,hierarchical cluster analysis,clustering
 3234,Analysis of weekly seasonality,hierarchical cluster analysis,clustering
-3235,NLP: Word2Vec ❤️ t-SNE,hierarchical cluster analysis,clustering
+3235,NLP: Word2Vec ❤️ t-SNE,word2vec,nlp
 3236,German_Credit_TopikZulkarnain,hierarchical cluster analysis,clustering
 3237,Hierarchical Clustering,hierarchical cluster analysis,clustering
 3238,Clustering_CreditCard,hierarchical cluster analysis,clustering
@@ -3244,7 +3249,7 @@
 3242,World Happiness Data Analysis and Clustering,affinity propagation,clustering
 3243,Multi-Clustering Techniques,affinity propagation,clustering
 3244,mall_customer_segmentation,affinity propagation,clustering
-3245,NLP Capstone v2,affinity propagation,clustering
+3245,NLP Capstone v2,text classification,nlp
 3246,Various Clustering techniques,affinity propagation,clustering
 3247,Awesome CV with Fashion MNIST Classification,affinity propagation,clustering
 3248,nc_clustering_mall_customers,affinity propagation,clustering
@@ -3326,7 +3331,7 @@
 3324,Vatsal Chandra Supervised Learning,affinity propagation,clustering
 3325,Inne algorytmy grupowania,affinity propagation,clustering
 3326,Yosan At Taufiq_119290003_TugasClusteringIoT,affinity propagation,clustering
-3327,NLP Cheatsheet,affinity propagation,clustering
+3327,NLP Cheatsheet,nlp,nlp
 3328,Plotly_Mall_Customers,affinity propagation,clustering
 3329,"COVID-19 Literature Report: Genet., Origin, Evol.",affinity propagation,clustering
 3330,Mall Customer Segmentation Project,affinity propagation,clustering
@@ -3514,7 +3519,10 @@
 3512,Different Clustering Techniques and Algorithms,fuzzy-c-means,clustering
 3513,"The PLAsTiCC Astronomy ""Starter Kit""",fuzzy-c-means,clustering
 3514,fuzzy c-means,fuzzy-c-means,clustering
+<<<<<<< HEAD
 3515,"What are lung opacities? ",fuzzy-c-means,clustering
+=======
+>>>>>>> 3f94cf770e422ed4720124435c9758844e7cd3e0
 3516,Fuzzy C Means With country data,fuzzy-c-means,clustering
 3517,Fuzzy Logic - Image Contrast Enhancement,fuzzy-c-means,clustering
 3518,"BGMM Baseline, Fuzzy C-Means & K-Means",fuzzy-c-means,clustering
@@ -3552,7 +3560,6 @@
 3550,Fuzzy C-Means Clustering on Iris Dataset,fuzzy-c-means,clustering
 3551,Extensive EDA + FE + Models - IEEE Fraud Detection,fuzzy-c-means,clustering
 3552,42nd Solution - Nothing Special,fuzzy-c-means,clustering
-3553,Visual Graphs of Philosophy,fuzzy-c-means,clustering
 3554,TPS JULY22 - EDA and Fuzzy Kmeans,fuzzy-c-means,clustering
 3555,📷 Computer Vision 101 with OpenCV 🌈,fuzzy-c-means,clustering
 3556,Real Estate Sales Price Prediction,fuzzy-c-means,clustering
@@ -3577,7 +3584,6 @@
 3575,Sampling of a Large Scale Data,fuzzy-c-means,clustering
 3576,Is Data Science still in demand?,fuzzy-c-means,clustering
 3577,Hands-on Omics Integration,fuzzy-c-means,clustering
-3578,Learn to reduce the number of colors of images usi,fuzzy-c-means,clustering
 3579,Mall segmentation using clustering,fuzzy-c-means,clustering
 3580,Team_Alcapone_Submission,fuzzy-c-means,clustering
 3581,Readability Index in Python,fuzzy-c-means,clustering
@@ -3588,7 +3594,10 @@
 3586,House Prices with R via GLM and Model Trees,fuzzy-c-means,clustering
 3587,Fork of COVID XRay classification with Fuzzy 1.0 R,fuzzy-c-means,clustering
 3588,Does Data Science have a Future?,fuzzy-c-means,clustering
+<<<<<<< HEAD
 3589,"Speed Dating Experiment EDA ",fuzzy-c-means,clustering
+=======
+>>>>>>> 3f94cf770e422ed4720124435c9758844e7cd3e0
 3590,EFIGE: Classification and Clustering,fuzzy-c-means,clustering
 3591,Titanic:only use two features to reach top 5%,fuzzy-c-means,clustering
 3592,notebookc113e65037,fuzzy-c-means,clustering
@@ -4570,40 +4579,20 @@
 4568,LediaIsaj_data_analysis_real_estate,kmodes,clustering
 4569,Unsupervised K-means,kmodes,clustering
 4570,"Clustering K-means,Cure,DBSCAN",cure-clustering,clustering
-4571,How to become Leaf Doctor with Deep Learning,cure-clustering,clustering
-4572,CORD-19 : FastText words clustering,cure-clustering,clustering
-4573,😷Mining COVID-19 scientific papers🦠,cure-clustering,clustering
-4574,Unwrapping the COVID-19 genomes,cure-clustering,clustering
-4575,Fundamentals of Medical Image Processing,cure-clustering,clustering
-4576,Cure Algorithm unsupervised learning,cure-clustering,clustering
 4577,"Clustering K-means,Cure,DBSCAN",cure-clustering,clustering
 4578,Unsupervised Learning,cure-clustering,clustering
 4579,Approaching(Almost) Any Machine Learning Problem🤖,cure-clustering,clustering
-4580,HealthyDietvsCovid19,cure-clustering,clustering
 4581,Neural Networks From Scratch Tutorial,cure-clustering,clustering
 4582,Data Analysis / Clustering / Visualisation,cure-clustering,clustering
-4583,COVID parameter study - India & others,cure-clustering,clustering
-4584,COVID19 NLP Challenge,cure-clustering,clustering
-4585,COVID-19 News Matcher,cure-clustering,clustering
-4586,COVID-19 Dataset : Gaining actionable insights 📊,cure-clustering,clustering
 4587,(Filipe) Tipos de Aprendizado,cure-clustering,clustering
-4588,Visual Graphs of Philosophy,cure-clustering,clustering
-4589,"InstantLibrarian (Word2Vec, Scattertext)",cure-clustering,clustering
 4590,Latent Dirichlet Allocation for insight extraction,cure-clustering,clustering
 4591,TreatKeywordSynonyms,cure-clustering,clustering
 4592,Part 6 Ask questions on Therapeut3775 subset,cure-clustering,clustering
 4593,MODEL C: Mining DATA (with 3 submodels),cure-clustering,clustering
 4594,TorinoComeStai,cure-clustering,clustering
-4595,COVID-19-wonderbench-trial,cure-clustering,clustering
-4596,COVID-19 Dataset : Gaining actionable insights 📊,cure-clustering,clustering
-4597,COVID-19 Dataset : Insights,cure-clustering,clustering
 4598,Histopathologic Cancer Detection Model 2,cure-clustering,clustering
-4599,COVID-19 Dataset,cure-clustering,clustering
-4600,Extension to Covid -19 Analysis- Part 2,cure-clustering,clustering
 4601,notebook4d077d4502,cure-clustering,clustering
 4602,PCA & Clustering Analysis,cure-clustering,clustering
-4603,"COVID-19 Literature Report: Genet., Origin, Evol.",cure-clustering,clustering
-4604,Corona_19_Clustering_and_TopicWise_Search,cure-clustering,clustering
 4605,10 Models for Clustering,optics-clustering,clustering
 4606,Different Clustering Techniques and Algorithms,optics-clustering,clustering
 4607,9 clustering Techniques for Customer segmentation,optics-clustering,clustering
@@ -5022,16 +5011,11 @@
 5020,[Train] EfficientDet+aug+folding+mixed precision,edge-detection-box,computer vision
 5021,Analyzing Melanoma (See like Dermatologist),edge-detection-box,computer vision
 5022,YoloV4 Object Detection,edge-detection-box,computer vision
-5023,"Knowledge Graph & NLP Tutorial-(BERT,spaCy,NLTK)",edge-detection-box,computer vision
-5024,Jigsaw puzzle solved,edge-detection-box,computer vision
-5025,"Region,Edge and clustering Based Segmentation",edge-detection-box,computer vision
 5026,Leaf Classification|EDA|Model|🍀|,edge-detection-box,computer vision
 5027,EfficientDet meets Pytorch Lightning,edge-detection-box,computer vision
 5028,HPA Single Cell Classification EDA,edge-detection-box,computer vision
 5029,Automatic Number Plate Recognition,edge-detection-box,computer vision
 5030,🧐Object detection using TFhub🧐,edge-detection-box,computer vision
-5031,What do Kagglers say about Data Science ?,edge-detection-box,computer vision
-5032,Exploratory Analysis,edge-detection-box,computer vision
 5033,Creating Mask from Bbox with DeepMAC,edge-detection-box,computer vision
 5034,IEEE - LGB + Bayesian opt.,edge-detection-box,computer vision
 5035,Classify traffic lights with pre-trained CNN model,edge-detection-box,computer vision
@@ -5453,6 +5437,7 @@
 5451,ImageClassification_Pytorch_transferLearning,imageclassification,computer vision
 5452,HackerEarth Deep Learning Challenge Auto-tag Image,imageclassification,computer vision
 5453,Intel_ImageClassification,imageclassification,computer vision
+<<<<<<< HEAD
 5454,kernel49ccbe9320,imageclassification,computer vision
 5455,[HW]JaeingJeong-P4,imageclassification,computer vision
 5456,HW_hyonaYu_N4,imageclassification,computer vision
@@ -5465,6 +5450,8 @@
 5463,"[HW] Tae_joo Kim ",imageclassification,computer vision
 5464,[HW][JunghyunHwang]P4,imageclassification,computer vision
 5465,[HW] P4. DanGyeong,imageclassification,computer vision
+=======
+>>>>>>> 3f94cf770e422ed4720124435c9758844e7cd3e0
 5466,tagImages,imageclassification,computer vision
 5467,Intel_ImageClassification,imageclassification,computer vision
 5468,Intel image classification with cnn,imageclassification,computer vision
@@ -7160,8 +7147,12 @@
 7158,"NFL training and inference YOLOv5 ",yolo,computer vision
 7159,Great-Barrier-Reef: YOLOv5,yolo,computer vision
 7160,Train YOLOv5 + Cross Validation + Ensemble + W&B,yolo,computer vision
+<<<<<<< HEAD
 7161,"[GWD] first work with YOLO ",yolo,computer vision
 7162,Data Science Glossary on Kaggle,yolo,computer vision
+=======
+7161,[GWD] first work with YOLO ,yolo,computer vision
+>>>>>>> 3f94cf770e422ed4720124435c9758844e7cd3e0
 7163,YOLOv5 TACO,yolo,computer vision
 7164,Face Mask Yolo Data Viewing,yolo,computer vision
 7165,Great Barrier: YOLOX_L Training [LB 0.49] 🐠,yolo,computer vision
