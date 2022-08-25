@@ -435,7 +435,6 @@
 433,Jigsaw Naive Bayes AND Ridge Regression Explained,ridge regression,regression
 434,Advance Regression- Regularization (Ridge & Lasso),ridge regression,regression
 435,Head Start for Data Scientist,ridge regression,regression
-436,NLP Getting Started Tutorial,ridge regression,regression
 437,Ubiquant Market Prediction with Ridge Regression,ridge regression,regression
 438,House Price Prediction 🏡,ridge regression,regression
 439,xgboost + Ridge regression - 0.83,ridge regression,regression
@@ -497,7 +496,7 @@
 495,PCA and Regression,ridge regression,regression
 496,More Effective Ridge LGBM Script (LB 0.44341) - 2,ridge regression,regression
 497,Predicting House Prices with Regression,ridge regression,regression
-498,RAPIDS - Genetic Algorithm KNN - [CV 0.01840],ridge regression,regression
+498,RAPIDS - Genetic Algorithm KNN - [CV 0.01840],knn,classification
 499,Tutorial Part 2: Model Building using the Metadata,ridge regression,regression
 500,Ridge Regression on climate data,ridge regression,regression
 501,WiDS Datathon 2021: RAPIDS+XGB+LightGBM,ridge regression,regression
@@ -787,155 +786,6 @@
 785,Time Series -The various steps ,gpr,regression
 786,New_Colab_Features,gpr,regression
 787,showing up in medical appointments,gpr,regression
-788,Exercise: Trend,mars-regression,regression
-789,🚀 Spaceship Titanic: A complete guide 🏆,mars-regression,regression
-790,Awesome ML and Text Classification - Movie Reviews,mars-regression,regression
-791,Space Titanic: A Beginner Guide (80.24% accuracy),mars-regression,regression
-792,Cambiamento climatico in Italia,mars-regression,regression
-793,Feature Engineering from scratch,mars-regression,regression
-794,Predicting House Prices,mars-regression,regression
-795,🚀Multi-model analysis + EDA,mars-regression,regression
-796,What did we listen to on Spotify in 2018?🎵,mars-regression,regression
-797,Kaggle 2017 Survey Results,mars-regression,regression
-798,"Detailed and Full Solution(Step by Step,>80%score)",mars-regression,regression
-799,MARS and Random forest for app predictions,mars-regression,regression
-800,Torque Prediction,mars-regression,regression
-801,🚀 SST - 📊 EDA |17 models+DL🤖 🔥 TOP 7% 🔥 ,mars-regression,regression
-802,Supervised learning methods to predict price,mars-regression,regression
-803,A Small Research on Exoplanet Habitability,mars-regression,regression
-804,Burnout Prediction (R2=.91) with 11 regressors,mars-regression,regression
-805,HI-SEAS Solar Radiation Prediction,mars-regression,regression
-806,House Prices:EDA& Model Exploration via tidymodels,mars-regression,regression
-807,"Titanic Spaceship EDA, prediction(Multiple models)",mars-regression,regression
-808,Non-linear Regression Models,mars-regression,regression
-809,NHL Expected Goals Model and Heat Maps,mars-regression,regression
-810,Spacehip Titanic-Complete Data Understanding+ML🚀,mars-regression,regression
-811,Exploration and XGBoost to Predict Housing Price,mars-regression,regression
-812,Space Titanic EDA + 79% Classification,mars-regression,regression
-813,Anomaly/Outlier Detection IsolationForest/Prophet,mars-regression,regression
-814,Top Hits Spotify (2000-2019) - EDA,mars-regression,regression
-815,"TV, halftime shows and the Big Game Analysis",mars-regression,regression
-816,"EDA, blend of linear, lgbm, MARS, tidymodels",mars-regression,regression
-817,Multivariate Adaptive Regression Splines,mars-regression,regression
-818,Spaceship Titanic_EDA_17 Classification Algorithms,mars-regression,regression
-819,Boston House Price Prediction ,mars-regression,regression
-820,Analysis and prediction of aircraft delays,mars-regression,regression
-821,Car Price Prediction with Visualization (R2=.945) ,mars-regression,regression
-822,TITANIC(SPACESHIP)-VARIOUS MACHINE LEARNING MODEL,mars-regression,regression
-823,Foursquare Location Matching - Baseline Modeling,mars-regression,regression
-824,Almost every machine learning Algo - Part I,mars-regression,regression
-825,"Data preprocessing, simple viz, Model Fitting ",mars-regression,regression
-826,Spaceship Titanic🚀: Data Visualization + MODELS📊,mars-regression,regression
-827,House price EDA + caret ML and H2O ML,mars-regression,regression
-828,FitZee,mars-regression,regression
-829,Spaceship Titanic 3,mars-regression,regression
-830,Project: Analyzing TV Data,mars-regression,regression
-831,Bike_share: detail explain model-latest ML method,mars-regression,regression
-832,BrentOilPricePrediction,mars-regression,regression
-833,Spaceship Titanic 1,mars-regression,regression
-834,💄(Fancy + Complete) * EDA 💖,mars-regression,regression
-835,Spaceship Titanic Prediction,mars-regression,regression
-836,🚀 Spaceship Titanic - 📊EDA + Bayesian Tuning  ,mars-regression,regression
-837,Car Price Prediction with Boosting & DL (R2=0.95),mars-regression,regression
-838,MultiVariate Adaptive Regression Spline,mars-regression,regression
-839,Comparing regression techniques,mars-regression,regression
-840,MSCI 599,mars-regression,regression
-841,working on betalactamase dataset,mars-regression,regression
-842,Spaceship Titanic: EDA + PCA + Baseline Modeling,mars-regression,regression
-843,Fake News Prediction Algorithm,mars-regression,regression
-844,TMDB Starter Kernel: MARS and Elastic Net,mars-regression,regression
-845,Spaceship Titanic - Feature Engineering + Baseline,mars-regression,regression
-846,Detailed Classification Notebook | Spaceship,mars-regression,regression
-847,Exercise: Trend,mars-regression,regression
-848,Language identification,mars-regression,regression
-849,Predicting Heart Attack Using Tidymodels,mars-regression,regression
-850,Linear Non-linear Model starter-notebook,mars-regression,regression
-851,attrition in IBM,mars-regression,regression
-852,Model Explainability (2/5): Global Surrogates,mars-regression,regression
-853,Spaceship Titanic - Exploratory Data Analysis,mars-regression,regression
-854,Housing Prices -- MARS,mars-regression,regression
-855,MSCI 599,mars-regression,regression
-856,T.S.2.Exercise: Trend,mars-regression,regression
-857,Spaceship_titanic_ML,mars-regression,regression
-858,Baselines with EDA and Feature Engineering ,mars-regression,regression
-859,Topological Data Analysis on thematic tags ,mars-regression,regression
-860,Distributed Computation with Pyspark,mars-regression,regression
-861,"TV, halftime shows, and the Big Game Analysis",mars-regression,regression
-862,🛸Spaceship Titanic🚀,mars-regression,regression
-863,Visual Graphs of Philosophy,mars-regression,regression
-864,ML & DL Tutorials,mars-regression,regression
-865,kernel-tv-halftime-shows-and-the-big-game-datacamp,mars-regression,regression
-866,Exercise: Trend,mars-regression,regression
-867,Modelling Lactate Threshold,mars-regression,regression
-868,🚀Titanic Spaceship🚀ML Workflow🚀Detailed EDA,mars-regression,regression
-869,Space Titanic Pred : 6 ML models 79% Accuracy!!,mars-regression,regression
-870,Exercise: Trend,mars-regression,regression
-871,Spaceship Titanic 0.80360,mars-regression,regression
-872,Spaceship-Transport Predictions,mars-regression,regression
-873,Spaceship Titanic (EDA and modeling),mars-regression,regression
-874,Exercise: Trend,mars-regression,regression
-875,Exercise: Trend,mars-regression,regression
-876,TPS March 2021 Elastic Net and MARS,mars-regression,regression
-877,Time Series - Trend,mars-regression,regression
-878,LAX passenger prediction with Box Jenkins,mars-regression,regression
-879,notebook_superbowl,mars-regression,regression
-880,SuperBowl Halftime shows,mars-regression,regression
-881,Analyzing TV Data for Super Bowl ,mars-regression,regression
-882,Guide_to_Decision_Tree_with_Hyperparameter_tunning,mars-regression,regression
-883,Confidence Interval Estimation via Bootstrapping,mars-regression,regression
-884,Food Demand Forecasting Challenge,mars-regression,regression
-885,Superbowl Analysis,mars-regression,regression
-886,"TV, halftime shows, and Big Game",mars-regression,regression
-887,Exercise: Trend,mars-regression,regression
-888,Exercise: Trend,mars-regression,regression
-889,Exercise: Trend,mars-regression,regression
-890,Exercise: Trend,mars-regression,regression
-891,Titanic Spaceship,mars-regression,regression
-892,spaceship_titanic,mars-regression,regression
-893,EDA_FeatureEngineering_NoScaling_MLPClassifier,mars-regression,regression
-894,Spaceship Titanic,mars-regression,regression
-895,Spaceship Titanic Using Ensemble Methods,mars-regression,regression
-896,Predicting Bitcoin Prices Using Random Forest,mars-regression,regression
-897,SpaceshipTitanic (First kaggle) 79%,mars-regression,regression
-898,ML_PROJET,mars-regression,regression
-899,Class 2 - Trend,mars-regression,regression
-900,"BI - Marketing Campaign EDA, Analysis & Prediction",mars-regression,regression
-901,TV_Halftime,mars-regression,regression
-902,Data Camp's Super Bowl Project,mars-regression,regression
-903,"TV, halftime shows, and the Big Game DataCamp proj",mars-regression,regression
-904,Exercise: Trend,mars-regression,regression
-905,Exercise: Trend,mars-regression,regression
-906,Titanic Data Sandbox,mars-regression,regression
-907,Kaggle 2017 Survey Results,mars-regression,regression
-908,Keeping it insincere,mars-regression,regression
-909,Analisis de la Super Bowl y espectaculos. Español,mars-regression,regression
-910,Titanic  Survival Analysis using R,mars-regression,regression
-911,Netflix Original Films & IMDB Scores,mars-regression,regression
-912,Basic python,mars-regression,regression
-913,notebook2e0dcaeef0,mars-regression,regression
-914,Spaceship Titanic DS Solutions,mars-regression,regression
-915,Asteroid diameter prediction,mars-regression,regression
-916,Machine Learning with caret on example Audi,mars-regression,regression
-917,To The Edge Of The Universe & Back,mars-regression,regression
-918,Analyzing TV Data,mars-regression,regression
-919,Super_Bowls_Insights,mars-regression,regression
-920,Super Bowl Analysis,mars-regression,regression
-921,"TV, HALFTIME SHOWS, AND THE BIG GAME",mars-regression,regression
-922,"TV, halftime shows, and the Big Game",mars-regression,regression
-923,XGBoost and Data Viz Faïga,mars-regression,regression
-924,Super Bowl,mars-regression,regression
-925,DataCamp - Python Project 1,mars-regression,regression
-926,Analyze TV market,mars-regression,regression
-927," Project: TV, Halftime Shows, and the Big Game",mars-regression,regression
-928,Analysis and prediction of aircraft delays,mars-regression,regression
-929,"COVID-19 Literature Report: Genet., Origin, Evol.",mars-regression,regression
-930,marshouse,mars-regression,regression
-931,Kaggle 2017 Survey Results 88e6cc,mars-regression,regression
-932,Fork of Kaggle 2017 Survey Results,mars-regression,regression
-933,Ames House Prices - Mars,mars-regression,regression
-934,Rossman - Regression - Correction,mars-regression,regression
-935,Fork of Fork of Kaggle 2017 Survey Results,mars-regression,regression
-936,spacy_readability,mars-regression,regression
 937,pga-tour-analysis-by-gam,regressiontree,regression
 938,Explainable Boosting machines for Tabular data,regressiontree,regression
 939,sklearn boston house-prices RegressionTree,regressiontree,regression
@@ -1727,7 +1577,6 @@
 1725,Heart Disease - Automatic AdvEDA & FE & 20 models,perceptron,classification
 1726,Different Algorithms and Basic Data Analysis,perceptron,classification
 1727,Titanic to beginner,perceptron,classification
-1728, TimeSeries Data - Multilayer Perceptron - Keras,perceptron,classification
 1729,Customer churn prediction: Telecom Churn Dataset,perceptron,classification
 1730,Iris Perceptron Classification,perceptron,classification
 1731,perceptron (90%),perceptron,classification
@@ -2206,7 +2055,7 @@
 2204,Naive Bayes Classifier from scratch,naive bayes,classification
 2205,Heart Attack Prediction Using Different ML Models,naive bayes,classification
 2206,Feature Engineering-Naive Bayes with Bag of Words,naive bayes,classification
-2207,Sentiment Analysis using LR & Naive Bayes,naive bayes,classification
+2207,Sentiment Analysis using LR & Naive Bayes,sentiment analysis,nlp
 2208,Minimal LSTM + NB-SVM baseline ensemble,naive bayes,classification
 2209,Naive Bayes rating classification ,naive bayes,classification
 2210,"NCI Thesaurus & Naive Bayes (vs RF, GBM, GLM & DL)",naive bayes,classification
@@ -3000,7 +2849,7 @@
 2998,EDA & Customer Segmentation with Clustering,spectral clustering,clustering
 2999,Make your soccer club and find similar players,spectral clustering,clustering
 3000,World Happiness Analysis,spectral clustering,clustering
-3001,NLP Capstone v2,spectral clustering,clustering
+3001,NLP Capstone v2,text classification,nlp
 3002,Models to Improve Customer Retention,spectral clustering,clustering
 3003,R : Challenge of 100+ Visualization in R,spectral clustering,clustering
 3004,Catboost classifier for astronomical objects,spectral clustering,clustering
@@ -3234,7 +3083,7 @@
 3232,Online Retail (Clustering),hierarchical cluster analysis,clustering
 3233,Analysis of aggregated item series,hierarchical cluster analysis,clustering
 3234,Analysis of weekly seasonality,hierarchical cluster analysis,clustering
-3235,NLP: Word2Vec ❤️ t-SNE,hierarchical cluster analysis,clustering
+3235,NLP: Word2Vec ❤️ t-SNE,word2vec,nlp
 3236,German_Credit_TopikZulkarnain,hierarchical cluster analysis,clustering
 3237,Hierarchical Clustering,hierarchical cluster analysis,clustering
 3238,Clustering_CreditCard,hierarchical cluster analysis,clustering
@@ -3244,7 +3093,7 @@
 3242,World Happiness Data Analysis and Clustering,affinity propagation,clustering
 3243,Multi-Clustering Techniques,affinity propagation,clustering
 3244,mall_customer_segmentation,affinity propagation,clustering
-3245,NLP Capstone v2,affinity propagation,clustering
+3245,NLP Capstone v2,text classification,nlp
 3246,Various Clustering techniques,affinity propagation,clustering
 3247,Awesome CV with Fashion MNIST Classification,affinity propagation,clustering
 3248,nc_clustering_mall_customers,affinity propagation,clustering
@@ -3326,7 +3175,7 @@
 3324,Vatsal Chandra Supervised Learning,affinity propagation,clustering
 3325,Inne algorytmy grupowania,affinity propagation,clustering
 3326,Yosan At Taufiq_119290003_TugasClusteringIoT,affinity propagation,clustering
-3327,NLP Cheatsheet,affinity propagation,clustering
+3327,NLP Cheatsheet,nlp,nlp
 3328,Plotly_Mall_Customers,affinity propagation,clustering
 3329,"COVID-19 Literature Report: Genet., Origin, Evol.",affinity propagation,clustering
 3330,Mall Customer Segmentation Project,affinity propagation,clustering
@@ -3514,7 +3363,6 @@
 3512,Different Clustering Techniques and Algorithms,fuzzy-c-means,clustering
 3513,"The PLAsTiCC Astronomy ""Starter Kit""",fuzzy-c-means,clustering
 3514,fuzzy c-means,fuzzy-c-means,clustering
-3515,What are lung opacities? ,fuzzy-c-means,clustering
 3516,Fuzzy C Means With country data,fuzzy-c-means,clustering
 3517,Fuzzy Logic - Image Contrast Enhancement,fuzzy-c-means,clustering
 3518,"BGMM Baseline, Fuzzy C-Means & K-Means",fuzzy-c-means,clustering
@@ -3552,7 +3400,6 @@
 3550,Fuzzy C-Means Clustering on Iris Dataset,fuzzy-c-means,clustering
 3551,Extensive EDA + FE + Models - IEEE Fraud Detection,fuzzy-c-means,clustering
 3552,42nd Solution - Nothing Special,fuzzy-c-means,clustering
-3553,Visual Graphs of Philosophy,fuzzy-c-means,clustering
 3554,TPS JULY22 - EDA and Fuzzy Kmeans,fuzzy-c-means,clustering
 3555,📷 Computer Vision 101 with OpenCV 🌈,fuzzy-c-means,clustering
 3556,Real Estate Sales Price Prediction,fuzzy-c-means,clustering
@@ -3577,7 +3424,6 @@
 3575,Sampling of a Large Scale Data,fuzzy-c-means,clustering
 3576,Is Data Science still in demand?,fuzzy-c-means,clustering
 3577,Hands-on Omics Integration,fuzzy-c-means,clustering
-3578,Learn to reduce the number of colors of images usi,fuzzy-c-means,clustering
 3579,Mall segmentation using clustering,fuzzy-c-means,clustering
 3580,Team_Alcapone_Submission,fuzzy-c-means,clustering
 3581,Readability Index in Python,fuzzy-c-means,clustering
@@ -3588,7 +3434,6 @@
 3586,House Prices with R via GLM and Model Trees,fuzzy-c-means,clustering
 3587,Fork of COVID XRay classification with Fuzzy 1.0 R,fuzzy-c-means,clustering
 3588,Does Data Science have a Future?,fuzzy-c-means,clustering
-3589,Speed Dating Experiment EDA ,fuzzy-c-means,clustering
 3590,EFIGE: Classification and Clustering,fuzzy-c-means,clustering
 3591,Titanic:only use two features to reach top 5%,fuzzy-c-means,clustering
 3592,notebookc113e65037,fuzzy-c-means,clustering
@@ -4570,40 +4415,20 @@
 4568,LediaIsaj_data_analysis_real_estate,kmodes,clustering
 4569,Unsupervised K-means,kmodes,clustering
 4570,"Clustering K-means,Cure,DBSCAN",cure-clustering,clustering
-4571,How to become Leaf Doctor with Deep Learning,cure-clustering,clustering
-4572,CORD-19 : FastText words clustering,cure-clustering,clustering
-4573,😷Mining COVID-19 scientific papers🦠,cure-clustering,clustering
-4574,Unwrapping the COVID-19 genomes,cure-clustering,clustering
-4575,Fundamentals of Medical Image Processing,cure-clustering,clustering
-4576,Cure Algorithm unsupervised learning,cure-clustering,clustering
 4577,"Clustering K-means,Cure,DBSCAN",cure-clustering,clustering
 4578,Unsupervised Learning,cure-clustering,clustering
 4579,Approaching(Almost) Any Machine Learning Problem🤖,cure-clustering,clustering
-4580,HealthyDietvsCovid19,cure-clustering,clustering
 4581,Neural Networks From Scratch Tutorial,cure-clustering,clustering
 4582,Data Analysis / Clustering / Visualisation,cure-clustering,clustering
-4583,COVID parameter study - India & others,cure-clustering,clustering
-4584,COVID19 NLP Challenge,cure-clustering,clustering
-4585,COVID-19 News Matcher,cure-clustering,clustering
-4586,COVID-19 Dataset : Gaining actionable insights 📊,cure-clustering,clustering
 4587,(Filipe) Tipos de Aprendizado,cure-clustering,clustering
-4588,Visual Graphs of Philosophy,cure-clustering,clustering
-4589,"InstantLibrarian (Word2Vec, Scattertext)",cure-clustering,clustering
 4590,Latent Dirichlet Allocation for insight extraction,cure-clustering,clustering
 4591,TreatKeywordSynonyms,cure-clustering,clustering
 4592,Part 6 Ask questions on Therapeut3775 subset,cure-clustering,clustering
 4593,MODEL C: Mining DATA (with 3 submodels),cure-clustering,clustering
 4594,TorinoComeStai,cure-clustering,clustering
-4595,COVID-19-wonderbench-trial,cure-clustering,clustering
-4596,COVID-19 Dataset : Gaining actionable insights 📊,cure-clustering,clustering
-4597,COVID-19 Dataset : Insights,cure-clustering,clustering
 4598,Histopathologic Cancer Detection Model 2,cure-clustering,clustering
-4599,COVID-19 Dataset,cure-clustering,clustering
-4600,Extension to Covid -19 Analysis- Part 2,cure-clustering,clustering
 4601,notebook4d077d4502,cure-clustering,clustering
 4602,PCA & Clustering Analysis,cure-clustering,clustering
-4603,"COVID-19 Literature Report: Genet., Origin, Evol.",cure-clustering,clustering
-4604,Corona_19_Clustering_and_TopicWise_Search,cure-clustering,clustering
 4605,10 Models for Clustering,optics-clustering,clustering
 4606,Different Clustering Techniques and Algorithms,optics-clustering,clustering
 4607,9 clustering Techniques for Customer segmentation,optics-clustering,clustering
@@ -5022,16 +4847,11 @@
 5020,[Train] EfficientDet+aug+folding+mixed precision,edge-detection-box,computer vision
 5021,Analyzing Melanoma (See like Dermatologist),edge-detection-box,computer vision
 5022,YoloV4 Object Detection,edge-detection-box,computer vision
-5023,"Knowledge Graph & NLP Tutorial-(BERT,spaCy,NLTK)",edge-detection-box,computer vision
-5024,Jigsaw puzzle solved,edge-detection-box,computer vision
-5025,"Region,Edge and clustering Based Segmentation",edge-detection-box,computer vision
 5026,Leaf Classification|EDA|Model|🍀|,edge-detection-box,computer vision
 5027,EfficientDet meets Pytorch Lightning,edge-detection-box,computer vision
 5028,HPA Single Cell Classification EDA,edge-detection-box,computer vision
 5029,Automatic Number Plate Recognition,edge-detection-box,computer vision
 5030,🧐Object detection using TFhub🧐,edge-detection-box,computer vision
-5031,What do Kagglers say about Data Science ?,edge-detection-box,computer vision
-5032,Exploratory Analysis,edge-detection-box,computer vision
 5033,Creating Mask from Bbox with DeepMAC,edge-detection-box,computer vision
 5034,IEEE - LGB + Bayesian opt.,edge-detection-box,computer vision
 5035,Classify traffic lights with pre-trained CNN model,edge-detection-box,computer vision
@@ -5453,18 +5273,6 @@
 5451,ImageClassification_Pytorch_transferLearning,imageclassification,computer vision
 5452,HackerEarth Deep Learning Challenge Auto-tag Image,imageclassification,computer vision
 5453,Intel_ImageClassification,imageclassification,computer vision
-5454,kernel49ccbe9320,imageclassification,computer vision
-5455,[HW]JaeingJeong-P4,imageclassification,computer vision
-5456,HW_hyonaYu_N4,imageclassification,computer vision
-5457,Dae Chan Han[P4],imageclassification,computer vision
-5458,hw_namhyunho,imageclassification,computer vision
-5459,[HW][YouCheol],imageclassification,computer vision
-5460,[HW4]Seong Min Wi,imageclassification,computer vision
-5461,[HW]JaeungJeong-P4,imageclassification,computer vision
-5462,[HW]Baek Sohyeon.P4,imageclassification,computer vision
-5463,[HW] Tae_joo Kim ,imageclassification,computer vision
-5464,[HW][JunghyunHwang]P4,imageclassification,computer vision
-5465,[HW] P4. DanGyeong,imageclassification,computer vision
 5466,tagImages,imageclassification,computer vision
 5467,Intel_ImageClassification,imageclassification,computer vision
 5468,Intel image classification with cnn,imageclassification,computer vision
@@ -7161,7 +6969,6 @@
 7159,Great-Barrier-Reef: YOLOv5,yolo,computer vision
 7160,Train YOLOv5 + Cross Validation + Ensemble + W&B,yolo,computer vision
 7161,[GWD] first work with YOLO ,yolo,computer vision
-7162,Data Science Glossary on Kaggle,yolo,computer vision
 7163,YOLOv5 TACO,yolo,computer vision
 7164,Face Mask Yolo Data Viewing,yolo,computer vision
 7165,Great Barrier: YOLOX_L Training [LB 0.49] 🐠,yolo,computer vision
