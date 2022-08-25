@@ -30,7 +30,6 @@ affinity propagation;clustering
 self organising map;clustering
 clustering;clustering
 fcm;clustering
-fuzzy-c-means;clustering
 agglomerativeclustering;clustering
 meanshift;clustering
 gaussianmixture;clustering
@@ -40,13 +39,13 @@ denclue;clustering
 minibatchkmeans;clustering
 kmedoids;clustering
 kmodes;clustering
-optics-clustering;clustering
+optics clustering;clustering
 DBSCAN;clustering
 semanticsegmentation;computer vision
 instancesegmentation;computer vision
-edge-detection-box;computer vision
+edge detection-box;computer vision
 objectdetection;computer vision
-facial-image-recognition;computer vision
+facial image recognition;computer vision
 imageclassification;computer vision
 opencv;computer vision
 vgg;computer vision
@@ -58,7 +57,7 @@ inceptionv3;computer vision
 unet;computer vision
 fasterrcnn;computer vision
 nasnet;computer vision
-yolo;computer vision
+image object yolo;computer vision
 deeplab;computer vision
 pytorch;computer vision
 sentiment analysis;nlp
