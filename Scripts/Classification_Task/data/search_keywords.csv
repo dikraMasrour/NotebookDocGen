@@ -13,6 +13,8 @@ olsregression;regression
 plsregression;regression
 mae-mse-r2;regression
 svr;regression
+adaline;classification
+perceptron;classification
 logistic regression;classification
 support vector machine classifier;classification
 svc;classification
