@@ -40,7 +40,6 @@ denclue;clustering
 minibatchkmeans;clustering
 kmedoids;clustering
 kmodes;clustering
-cure-clustering;clustering
 optics-clustering;clustering
 DBSCAN;clustering
 semanticsegmentation;computer vision
@@ -71,12 +70,8 @@ nltk spacy gensim;nlp
 huggingface;nlp
 marianmt;nlp
 bleu;nlp
-tf-idf;nlp
 t5model;nlp
-skipgram;nlp
-word2vec;nlp
 spacy;nlp
-fasttext;nlp
 textblob;nlp
 autonlp;nlp
 xlm;nlp
@@ -84,9 +79,7 @@ pegasus;nlp
 electra;nlp
 gpt;nlp
 bert roberta;nlp 
-word2vec;nlp
-glove;nlp
-bert word2vec glove;nlp
+word2vec glove;nlp
 skipgram;nlp 
 bagofwords cbow;nlp
 fasttext;nlp
