@@ -75,9 +75,9 @@ xlm;nlp
 pegasus;nlp
 electra;nlp
 gpt;nlp
-bert roberta;nlp 
+bert roberta;nlp
 word2vec glove;nlp
-skipgram;nlp 
+skipgram;nlp
 bagofwords cbow;nlp
 fasttext;nlp
 tfidf;nlp
