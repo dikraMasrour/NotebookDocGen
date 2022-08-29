@@ -786,7 +786,6 @@
 785,"Time Series -The various steps ",gpr,regression
 786,New_Colab_Features,gpr,regression
 787,showing up in medical appointments,gpr,regression
-<<<<<<< HEAD
 788,Exercise: Trend,mars-regression,regression
 789,🚀 Spaceship Titanic: A complete guide 🏆,mars-regression,regression
 790,Awesome ML and Text Classification - Movie Reviews,mars-regression,regression
@@ -936,8 +935,6 @@
 934,Rossman - Regression - Correction,mars-regression,regression
 935,Fork of Fork of Kaggle 2017 Survey Results,mars-regression,regression
 936,spacy_readability,mars-regression,regression
-=======
->>>>>>> 3f94cf770e422ed4720124435c9758844e7cd3e0
 937,pga-tour-analysis-by-gam,regressiontree,regression
 938,Explainable Boosting machines for Tabular data,regressiontree,regression
 939,sklearn boston house-prices RegressionTree,regressiontree,regression
@@ -1729,10 +1726,7 @@
 1725,Heart Disease - Automatic AdvEDA & FE & 20 models,perceptron,classification
 1726,Different Algorithms and Basic Data Analysis,perceptron,classification
 1727,Titanic to beginner,perceptron,classification
-<<<<<<< HEAD
 1728," TimeSeries Data - Multilayer Perceptron - Keras",perceptron,classification
-=======
->>>>>>> 3f94cf770e422ed4720124435c9758844e7cd3e0
 1729,Customer churn prediction: Telecom Churn Dataset,perceptron,classification
 1730,Iris Perceptron Classification,perceptron,classification
 1731,perceptron (90%),perceptron,classification
@@ -3519,10 +3513,7 @@
 3512,Different Clustering Techniques and Algorithms,fuzzy-c-means,clustering
 3513,"The PLAsTiCC Astronomy ""Starter Kit""",fuzzy-c-means,clustering
 3514,fuzzy c-means,fuzzy-c-means,clustering
-<<<<<<< HEAD
 3515,"What are lung opacities? ",fuzzy-c-means,clustering
-=======
->>>>>>> 3f94cf770e422ed4720124435c9758844e7cd3e0
 3516,Fuzzy C Means With country data,fuzzy-c-means,clustering
 3517,Fuzzy Logic - Image Contrast Enhancement,fuzzy-c-means,clustering
 3518,"BGMM Baseline, Fuzzy C-Means & K-Means",fuzzy-c-means,clustering
@@ -3594,10 +3585,7 @@
 3586,House Prices with R via GLM and Model Trees,fuzzy-c-means,clustering
 3587,Fork of COVID XRay classification with Fuzzy 1.0 R,fuzzy-c-means,clustering
 3588,Does Data Science have a Future?,fuzzy-c-means,clustering
-<<<<<<< HEAD
 3589,"Speed Dating Experiment EDA ",fuzzy-c-means,clustering
-=======
->>>>>>> 3f94cf770e422ed4720124435c9758844e7cd3e0
 3590,EFIGE: Classification and Clustering,fuzzy-c-means,clustering
 3591,Titanic:only use two features to reach top 5%,fuzzy-c-means,clustering
 3592,notebookc113e65037,fuzzy-c-means,clustering
@@ -5437,7 +5425,6 @@
 5451,ImageClassification_Pytorch_transferLearning,imageclassification,computer vision
 5452,HackerEarth Deep Learning Challenge Auto-tag Image,imageclassification,computer vision
 5453,Intel_ImageClassification,imageclassification,computer vision
-<<<<<<< HEAD
 5454,kernel49ccbe9320,imageclassification,computer vision
 5455,[HW]JaeingJeong-P4,imageclassification,computer vision
 5456,HW_hyonaYu_N4,imageclassification,computer vision
@@ -5450,8 +5437,6 @@
 5463,"[HW] Tae_joo Kim ",imageclassification,computer vision
 5464,[HW][JunghyunHwang]P4,imageclassification,computer vision
 5465,[HW] P4. DanGyeong,imageclassification,computer vision
-=======
->>>>>>> 3f94cf770e422ed4720124435c9758844e7cd3e0
 5466,tagImages,imageclassification,computer vision
 5467,Intel_ImageClassification,imageclassification,computer vision
 5468,Intel image classification with cnn,imageclassification,computer vision
@@ -7147,12 +7132,9 @@
 7158,"NFL training and inference YOLOv5 ",yolo,computer vision
 7159,Great-Barrier-Reef: YOLOv5,yolo,computer vision
 7160,Train YOLOv5 + Cross Validation + Ensemble + W&B,yolo,computer vision
-<<<<<<< HEAD
 7161,"[GWD] first work with YOLO ",yolo,computer vision
 7162,Data Science Glossary on Kaggle,yolo,computer vision
-=======
 7161,[GWD] first work with YOLO ,yolo,computer vision
->>>>>>> 3f94cf770e422ed4720124435c9758844e7cd3e0
 7163,YOLOv5 TACO,yolo,computer vision
 7164,Face Mask Yolo Data Viewing,yolo,computer vision
 7165,Great Barrier: YOLOX_L Training [LB 0.49] 🐠,yolo,computer vision
