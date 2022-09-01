@@ -8,4 +8,7 @@ reinforcement learning/
 cleaned_ntb_only_en.csv
 cleaned_ntb.csv
 cleaned_ntb.pkl
-transform.ipynb
+cleaned_ntb_scd.pkl
+cleaned_ntb_only_en_scd.csv
+cleaned_ntb_scd.csv
+cleaned_ntb_only_en_scd.pkl
