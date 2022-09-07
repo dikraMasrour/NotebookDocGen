@@ -60,8 +60,8 @@ def cleaning_ntbk(df,raw_df):
 
 
 
-DATA_PATH_INPUT = ""
-DATA_PATH_OUTPUT = ""
+DATA_PATH_INPUT = "C:/Users/zdahmani/Documents/Documentation_generator_project/NotebookCodeGen/Scripts/Classification_Task/data/clustering/flight-crash-investigation.ipynb"
+DATA_PATH_OUTPUT = "C:/Users/zdahmani/Documents/Documentation_generator_project/NotebookCodeGen/Scripts/Classification_Task/data/test.csv"
 
 df = pd.DataFrame(columns=['cell-type','source'])
 
@@ -75,7 +75,7 @@ cleaning_ntbk(df,raw_df)
 
 c = 0
 for i in df.index:
-    if df['cell-type'] == "raw" :
+    if df.loc[i]['cell-type'] == "raw" :
         c+=1
 
 if c!=0 :
@@ -134,7 +134,7 @@ def average_embeddings(embedding_tensor):
 row_avg_embedding = []
 for row in df.index:
     embedding = embed_single_row(df.loc[row, 'source'], row)
-    row_avg_embedding.append((average_embeddings(embedding),  df.loc[row, 'title']))
+    row_avg_embedding.append((average_embeddings(embedding)))
     
 # build intermediary dataframe of averaged row vectors, titles and tags 
 interm_df = pd.DataFrame(row_avg_embedding, columns = ['row_vector'])
@@ -147,8 +147,6 @@ def build_df():
     features = []
     for i in range(vect_dim):
         features.append('num_feature_' + str(i))
-
-    features.append('target_category')
     final_df = pd.DataFrame(columns=features)
     return final_df
 
