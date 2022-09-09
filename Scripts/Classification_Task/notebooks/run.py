@@ -1,6 +1,8 @@
 import argparse
 import preprocessor as prep
 import embedder as e
+import model_invoker as mi
+
 '''
 - pass notebook to preprocessor as json in args + test if cells are a list + test if nb is .ipynb + test if english nb
 - extract cells from nb
@@ -38,6 +40,8 @@ def main():
         vect_ntb = e.embed(clean_df)
         print(vect_ntb, vect_ntb.shape, vect_ntb.describe())
 
+        mi.modelling(vect_ntb)
+        
 
 
 if __name__ == "__main__":

@@ -1,5 +1,12 @@
+from pyexpat import model
 import pycurl
 from io import BytesIO
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay, roc_auc_score, f1_score
+import matplotlib.pyplot as plt
+import plotly.figure_factory as ff
+import pickle
 
 ''''curl -X POST "${omlserver}/omlmod/v1/deployment/svm_mpg/score" \
 --header "Authorization: Bearer ${token}" \
@@ -16,12 +23,10 @@ from io import BytesIO
 }]}'''
 
 
+def modelling(vect_ntb):
+    filename = 'C:\\Users\\dmasrour\\Documents\\CodeDoc_Generation\\Scripts\\Classification_Task\\notebooks\\finalized_model.sav'
+    loaded_model = pickle.load(open(filename, 'rb'))
+    print(loaded_model.predict(vect_ntb))
 
-b_obj = BytesIO()
-crl = pycurl.Curl()
-crl.setopt(crl.URL,'http://pvtlb.adbs-private.oraclevcn.com/omlmod/v1/deployment')
-crl.setopt(crl.WRITEDATA, b_obj)
-crl.perform()
-crl.close()
-get_body = b_obj.getvalue()
-print('Output of GET request:\n%s' % get_body.decode('utf8'))
+
+
