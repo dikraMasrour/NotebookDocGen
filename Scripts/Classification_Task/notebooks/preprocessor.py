@@ -2,6 +2,7 @@
 
 # basic
 from operator import index
+from tokenize import Triple
 import pandas as pd
 import numpy as np
 import json
@@ -44,7 +45,10 @@ def check_lang_content(clean_md):
         is_english = is_english + (detect(str(clean_md.loc[row])) == 'en')
 
     # we define a threshold of .80 for non english rows as the library results is not consistent
-    return (is_english / len(clean_md)) > 0.80
+    if len(clean_md) != 0 :  is_english = (is_english / len(clean_md) > 0.80)
+    else: is_english = True
+
+    return is_english
 
 
 
@@ -106,9 +110,9 @@ def clean_code(code_df):
 
 def preprocess(file_path):
 
-    if not check_lang_title(file_path):
-        print('Preprocessing failed : Please enter an english notebook title')
-        exit()
+    # if not check_lang_title(file_path):
+    #     print('Preprocessing failed : Please enter an english notebook title')
+    #     exit()
 
     raw_df = read_notebook_cells(file_path)
     remove_raw(raw_df)

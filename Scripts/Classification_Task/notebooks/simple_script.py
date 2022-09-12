@@ -1,19 +1,24 @@
 #importing libs
 
+# basic
 import pandas as pd
-import re
+import numpy as np
 import os 
+import pickle
 import json
 import string
-import pyparsing
 import warnings
+
+# cleaning & preprocessing
+import re
 import mdtex2html
-import numpy as np
-import torch
-import pickle
+import pyparsing
 from langdetect import detect, DetectorFactory
 from bs4 import BeautifulSoup
 from cleantext import clean
+
+# embedding
+import torch
 from transformers import AutoTokenizer, AutoModel, pipeline
 
 #define VARs
@@ -28,7 +33,7 @@ model = AutoModel.from_pretrained("microsoft/codebert-base")
 DetectorFactory.seed = 0
 warnings.filterwarnings('ignore')
 
-#notebook cleanning
+#notebook cleaning
 def cleaning_ntbk(df,raw_df):
     for i in raw_df.index:
 
