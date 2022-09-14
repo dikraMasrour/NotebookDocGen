@@ -2,6 +2,7 @@ import argparse
 import preprocessor as prep
 import embedder as e
 import model_invoker as mi
+import time
 
 '''
 - pass notebook to preprocessor as json in args + test if cells are a list + test if nb is .ipynb + test if english nb
@@ -16,6 +17,8 @@ import model_invoker as mi
 - record time
 - add args option to consider md and code or code only
 '''
+
+
 
 
 
@@ -36,13 +39,15 @@ def main():
 
 
         clean_df = prep.preprocess(args.path)
-        print(clean_df)
+        # print(clean_df)
         vect_ntb = e.embed(clean_df)
-        print(vect_ntb, vect_ntb.shape, vect_ntb.describe())
+        # print(vect_ntb, vect_ntb.shape, vect_ntb.describe())
 
         mi.modelling(vect_ntb)
         
 
 
 if __name__ == "__main__":
+    start_time = time.time()
     main()
+    print("--- %s seconds ---" % (time.time() - start_time))

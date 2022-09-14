@@ -26,7 +26,7 @@ import pickle
 def modelling(vect_ntb):
     filename = 'C:\\Users\\dmasrour\\Documents\\CodeDoc_Generation\\Scripts\\Classification_Task\\notebooks\\finalized_model.sav'
     loaded_model = pickle.load(open(filename, 'rb'))
-    print(loaded_model.predict(vect_ntb))
+    print(loaded_model.predict(vect_ntb)[0])
 
 
 

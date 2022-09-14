@@ -105,8 +105,8 @@ def construct_final_input(vect_df):
 
 def embed(clean_df):
     vect_df = embed_and_average_row(clean_df)
-    print(vect_df)
+    # print(vect_df)
     vect_ntb = embed_and_average_notebook(vect_df)
-    print(vect_ntb)
+    # print(vect_ntb)
     return construct_final_input(vect_ntb)
     
