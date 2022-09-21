@@ -1,8 +1,6 @@
 #importing libs
 
 # basic
-from operator import index
-from tokenize import Triple
 import pandas as pd
 import numpy as np
 import json
@@ -120,9 +118,9 @@ def preprocess(file_path):
     remove_empty(raw_df)
     
     clean_md = clean_markdown(raw_df[raw_df['cell_type'] == 'markdown']['source'])
-    if not check_lang_content(clean_md):
-        print('Preprocessing failed : Please enter an english notebook content')
-        exit()
+    # if not check_lang_content(clean_md):
+    #     print('Preprocessing failed : Please enter an english notebook content')
+    #     exit()
 
     clean_cd = clean_code(raw_df[raw_df['cell_type'] == 'code']['source'])
     clean_df = pd.concat([clean_md, clean_cd])

@@ -1,8 +1,5 @@
-from distutils.command.clean import clean
-from pyexpat import model
-from typing import final
-from transformers import AutoTokenizer, AutoModel, pipeline
 import torch
+from transformers import AutoTokenizer, AutoModel, pipeline
 import pandas as pd
 import numpy as np
 
