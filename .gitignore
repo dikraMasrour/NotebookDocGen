@@ -14,3 +14,4 @@ cleaned_ntb_only_en_scd.csv
 cleaned_ntb_scd.csv
 cleaned_ntb_only_en_scd.pkl
 test.ipynb
+text_dataset.pkl

@@ -1,0 +1,180 @@
+,kernel_ref,path,title,competition,domain,technique
+3,faressayah/text-analysis-topic-modelling-with-spacy-gensim,text-analysis-topic-modelling-with-spacy-gensim.ipynb,Text Analysis|Topic Modelling with spaCy & GENSIM,contradictory-my-dear-watson,nlp,classification
+9,yihdarshieh/more-nli-datasets-hugging-face-nlp-library,more-nli-datasets-hugging-face-nlp-library.ipynb,More NLI datasets - Hugging Face nlp library,contradictory-my-dear-watson,nlp,classification
+10,pradeepmuniasamy/contradictory-my-dear-watson-everything-you-need,contradictory-my-dear-watson-everything-you-need.ipynb,"Contradictory, My Dear Watson- Everything you need",contradictory-my-dear-watson,nlp,classification
+17,rhtsingh/interpreting-text-models-with-bert-on-tpu,interpreting-text-models-with-bert-on-tpu.ipynb,Interpreting text models with BERT on TPU,contradictory-my-dear-watson,nlp,classification
+19,narendrageek/nlp-augmenter-5-fold-bert-translator,nlp-augmenter-5-fold-bert-translator.ipynb,"NLP Augmenter, 5 Fold BERT & Translator",contradictory-my-dear-watson,nlp,classification
+21,dimitreoliveira/introduction-to-cyclegan-monet-paintings,introduction-to-cyclegan-monet-paintings.ipynb,Introduction to CycleGAN - Monet paintings,gan-getting-started,computer vision,no_technique
+23,imoore/generate-paintings-by-image-style-transfer,generate-paintings-by-image-style-transfer.ipynb,Generate Paintings By Image Style Transfer,gan-getting-started,computer vision,no_technique
+24,dimitreoliveira/improving-cyclegan-monet-paintings,improving-cyclegan-monet-paintings.ipynb,Improving CycleGAN - Monet paintings,gan-getting-started,computer vision,no_technique
+25,ihelon/monet-visualization-and-augmentation,monet-visualization-and-augmentation.ipynb,Monet - Visualization and Augmentation,gan-getting-started,computer vision,no_technique
+26,ruchi798/getting-started-with-gans,getting-started-with-gans.ipynb,Getting started with GANs ,gan-getting-started,computer vision,no_technique
+27,tanlikesmath/upit-a-package-for-unpaired-img2img-translation,upit-a-package-for-unpaired-img2img-translation.ipynb,UPIT -a package for unpaired img2img translation,gan-getting-started,computer vision,no_technique
+28,nachiket273/cyclegan-pytorch,cyclegan-pytorch.ipynb,CycleGAN_Pytorch,gan-getting-started,computer vision,no_technique
+29,doanquanvietnamca/the-beauty-of-cyclegan,the-beauty-of-cyclegan.ipynb,The Beauty of CycleGAN,gan-getting-started,computer vision,no_technique
+30,unfriendlyai/two-objective-discriminator,two-objective-discriminator.ipynb,Two-objective discriminator,gan-getting-started,computer vision,no_technique
+31,theblackmamba31/neural-style-transfer-photo-to-monet,neural-style-transfer-photo-to-monet.ipynb,Neural Style Transfer: Photo to Monet,gan-getting-started,computer vision,no_technique
+32,shivansh002/gentle-introduction-to-gan,gentle-introduction-to-gan.ipynb,✨ Gentle Introduction to GAN,gan-getting-started,computer vision,no_technique
+33,jesperdramsch/understanding-and-improving-cyclegans-tutorial,understanding-and-improving-cyclegans-tutorial.ipynb,Understanding and Improving CycleGANs - Tutorial,gan-getting-started,computer vision,no_technique
+34,isaienkov/monet-masterpieces-eda-and-image-classification,monet-masterpieces-eda-and-image-classification.ipynb,Monet masterpieces. EDA and image classification,gan-getting-started,computer vision,no_technique
+35,dapy15/monet-using-gan,monet-using-gan.ipynb,Monet using GAN,gan-getting-started,computer vision,no_technique
+37,jesperdramsch/getting-started-with-standard-gans-tutorial,getting-started-with-standard-gans-tutorial.ipynb,Getting started with standard GANs - Tutorial,gan-getting-started,computer vision,no_technique
+38,samibenhsan/sbh-advanced-cycle-gan-implementation-and-tricks,sbh-advanced-cycle-gan-implementation-and-tricks.ipynb,SBH  Advanced Cycle GAN Implementation and tricks ,gan-getting-started,computer vision,no_technique
+39,upamanyumukherjee/cyclegan,cyclegan.ipynb,CycleGAN,gan-getting-started,computer vision,no_technique
+40,ekrembayar/store-sales-ts-forecasting-a-comprehensive-guide,store-sales-ts-forecasting-a-comprehensive-guide.ipynb,Store Sales TS Forecasting - A Comprehensive Guide,store-sales-time-series-forecasting,no_domain,regression
+41,kashishrastogi/store-sales-analysis-time-serie,store-sales-analysis-time-serie.ipynb,📝Store Sales Analysis⏳ Time Serie,store-sales-time-series-forecasting,no_domain,regression
+42,odins0n/exploring-time-series-plots-beginners-guide,exploring-time-series-plots-beginners-guide.ipynb,📈Exploring Time Series plots: Beginners Guide📈,store-sales-time-series-forecasting,no_domain,regression
+43,azminetoushikwasi/time-series-analysis-forecasting,time-series-analysis-forecasting.ipynb,🗓 Time Series Analysis 🔺  Forecasting🔻,store-sales-time-series-forecasting,no_domain,regression
+44,azminetoushikwasi/mastering-bias-variance-tradeoff,mastering-bias-variance-tradeoff.ipynb,Mastering Bias-Variance Tradeoff ,store-sales-time-series-forecasting,no_domain,regression
+45,kartushovdanil/econometrics-is-all-you-need,econometrics-is-all-you-need.ipynb,🎓Econometrics is all you need🎓,store-sales-time-series-forecasting,no_domain,regression
+48,azminetoushikwasi/ml-foundation-cross-validation-all-methods,ml-foundation-cross-validation-all-methods.ipynb,ML Foundation ➡️ Cross Validation ✅ All Methods,store-sales-time-series-forecasting,no_domain,regression
+50,chemdata/intro-to-time-series-analysis-forecasting,intro-to-time-series-analysis-forecasting.ipynb,🗓 Intro to Time Series Analysis 🔺  Forecasting🔻,store-sales-time-series-forecasting,no_domain,regression
+51,vanguarde/study-series-uplift-modeling,study-series-uplift-modeling.ipynb,[study series] Uplift modeling,store-sales-time-series-forecasting,no_domain,regression
+52,mpwolke/vacaciones-en-ecuador-with-galearn,vacaciones-en-ecuador-with-galearn.ipynb,Vacaciones en Ecuador with Galearn,store-sales-time-series-forecasting,no_domain,regression
+53,hiro5299834/store-sales-ridge-voting-bagging-et-bagging-rf,store-sales-ridge-voting-bagging-et-bagging-rf.ipynb,Store Sales: Ridge+Voting(Bagging(ET)+Bagging(RF)),store-sales-time-series-forecasting,no_domain,regression
+54,javi23ruiz/eda-with-plotly-useful-conclusions,eda-with-plotly-useful-conclusions.ipynb,🌶EDA with Plotly & Useful Conclusions 💻 ⛰,store-sales-time-series-forecasting,no_domain,regression
+55,thanakr/first-project-store-sales,first-project-store-sales.ipynb,First project : Store sales,store-sales-time-series-forecasting,no_domain,regression
+56,azminetoushikwasi/detailed-lstm-time-series-forecasting,detailed-lstm-time-series-forecasting.ipynb,🔮 Detailed LSTM 🗓️ Time Series Forecasting 📆,store-sales-time-series-forecasting,no_domain,regression
+58,trnduythanhkhttt/term-project,term-project.ipynb,Term-Project,store-sales-time-series-forecasting,no_domain,regression
+59,aleksandrmorozov123/time-series-forecasting-with-python,time-series-forecasting-with-python.ipynb,Time series forecasting with Python,store-sales-time-series-forecasting,no_domain,regression
+60,cdeotte/rotation-augmentation-gpu-tpu-0-96,rotation-augmentation-gpu-tpu-0-96.ipynb,Rotation Augmentation GPU/TPU - [0.96+],tpu-getting-started,computer vision,classification
+61,ryanholbrook/create-your-first-submission,create-your-first-submission.ipynb,Create Your First Submission,tpu-getting-started,computer vision,classification
+62,cdeotte/cutmix-and-mixup-on-gpu-tpu,cutmix-and-mixup-on-gpu-tpu.ipynb,CutMix and MixUp on GPU/TPU,tpu-getting-started,computer vision,classification
+63,ryanholbrook/tfrecords-basics,tfrecords-basics.ipynb,TFRecords Basics,tpu-getting-started,computer vision,classification
+65,atamazian/fc-ensemble-external-data-effnet-densenet,fc-ensemble-external-data-effnet-densenet.ipynb,FC Ensemble External Data (EffNet+DenseNet),tpu-getting-started,computer vision,classification
+66,ryanluoli2/a-complete-guide-to-linear-regression,a-complete-guide-to-linear-regression.ipynb,🔥 A Complete Guide to Linear Regression,tpu-getting-started,computer vision,classification
+67,ryanluoli2/a-complete-guide-to-logistic-regression,a-complete-guide-to-logistic-regression.ipynb,🔥 A Complete Guide to Logistic Regression,tpu-getting-started,computer vision,classification
+68,odins0n/jax-flax-tf-data-vision-transformers-tutorial,jax-flax-tf-data-vision-transformers-tutorial.ipynb,[JAX+FLAX+TF.DATA] Vision Transformers Tutorial 🚀,tpu-getting-started,computer vision,classification
+69,dimitreoliveira/flower-classification-with-tpus-eda-and-baseline,flower-classification-with-tpus-eda-and-baseline.ipynb,Flower Classification with TPUs - EDA and Baseline,tpu-getting-started,computer vision,classification
+70,ryanluoli2/a-complete-guide-to-decision-trees-ensembles,a-complete-guide-to-decision-trees-ensembles.ipynb,🔥 A Complete Guide to Decision Trees & Ensembles ,tpu-getting-started,computer vision,classification
+71,ryanluoli2/a-complete-guide-to-k-nearest-neighbours,a-complete-guide-to-k-nearest-neighbours.ipynb,🔥 A Complete Guide to K-Nearest Neighbours,tpu-getting-started,computer vision,classification
+72,ryanluoli2/a-complete-guide-to-support-vector-machine,a-complete-guide-to-support-vector-machine.ipynb,🔥 A Complete Guide to Support Vector Machine,tpu-getting-started,computer vision,classification
+73,ipythonx/tf-hybrid-efficientnet-swin-transformer-gradcam,tf-hybrid-efficientnet-swin-transformer-gradcam.ipynb,TF: Hybrid EfficientNet Swin-Transformer : GradCAM,tpu-getting-started,computer vision,classification
+74,philculliton/a-simple-petals-tf-2-2-notebook,a-simple-petals-tf-2-2-notebook.ipynb,A Simple Petals TF 2.2 notebook,tpu-getting-started,computer vision,classification
+75,ryanluoli2/a-complete-guide-to-clustering-methods,a-complete-guide-to-clustering-methods.ipynb,🔥 A Complete Guide to Clustering Methods,tpu-getting-started,computer vision,classification
+76,dimitreoliveira/flower-with-tpus-advanced-augmentations,flower-with-tpus-advanced-augmentations.ipynb,Flower with TPUs - Advanced augmentations,tpu-getting-started,computer vision,classification
+77,georgiisirotenko/pytorch-tpu-baseline-flowers-tranlearning-ensemble,pytorch-tpu-baseline-flowers-tranlearning-ensemble.ipynb,Pytorch TPU Baseline|Flowers|TranLearning+Ensemble,tpu-getting-started,computer vision,classification
+78,allunia/differential-evolution,differential-evolution.ipynb,Differential Evolution,tpu-getting-started,computer vision,classification
+79,brendan45774/how-to-get-the-lowest-score,how-to-get-the-lowest-score.ipynb,How to get the lowest score,tpu-getting-started,computer vision,classification
+80,yassineghouzam/introduction-to-cnn-keras-0-997-top-6,introduction-to-cnn-keras-0-997-top-6.ipynb,Introduction to CNN Keras - 0.997 (top 6%),digit-recognizer,nlp,classification
+82,poonaml/deep-neural-network-keras-way,deep-neural-network-keras-way.ipynb,Deep Neural Network Keras way,digit-recognizer,nlp,classification
+84,kanncaa1/convolutional-neural-network-cnn-tutorial,convolutional-neural-network-cnn-tutorial.ipynb,Convolutional Neural Network (CNN) Tutorial,digit-recognizer,nlp,classification
+85,cdeotte/25-million-images-0-99757-mnist,25-million-images-0-99757-mnist.ipynb,25 Million Images! [0.99757] MNIST,digit-recognizer,nlp,classification
+86,kakauandme/tensorflow-deep-nn,tensorflow-deep-nn.ipynb,TensorFlow deep NN,digit-recognizer,nlp,classification
+88,cdeotte/how-to-choose-cnn-architecture-mnist,how-to-choose-cnn-architecture-mnist.ipynb,How to choose CNN Architecture MNIST,digit-recognizer,nlp,classification
+89,mauriciofigueiredo/mlp-simples-com-keras-para-iniciantes,mlp-simples-com-keras-para-iniciantes.ipynb,MLP simples com Keras para Iniciantes,digit-recognizer,nlp,classification
+90,archaeocharlie/a-beginner-s-approach-to-classification,a-beginner-s-approach-to-classification.ipynb,A Beginner's Approach to Classification,digit-recognizer,nlp,classification
+92,toregil/welcome-to-deep-learning-cnn-99,welcome-to-deep-learning-cnn-99.ipynb,Welcome to deep learning (CNN 99%),digit-recognizer,nlp,classification
+93,dansbecker/deep-learning-from-scratch,deep-learning-from-scratch.ipynb,Deep Learning From Scratch,digit-recognizer,nlp,classification
+94,mauriciofigueiredo/cnn-simples-com-keras-para-iniciantes,cnn-simples-com-keras-para-iniciantes.ipynb,CNN simples com Keras para Iniciantes,digit-recognizer,nlp,classification
+95,allunia/how-to-attack-a-machine-learning-model,how-to-attack-a-machine-learning-model.ipynb,How to attack a machine learning model?,digit-recognizer,nlp,classification
+96,adityaecdrid/mnist-with-keras-for-beginners-99457,mnist-with-keras-for-beginners-99457.ipynb,MNIST with Keras for Beginners(.99457),digit-recognizer,nlp,classification
+97,dansbecker/dropout-and-strides-for-larger-models,dropout-and-strides-for-larger-models.ipynb,Dropout and Strides for Larger Models,digit-recognizer,nlp,classification
+98,kmader/capsulenet-on-mnist,capsulenet-on-mnist.ipynb,CapsuleNet on MNIST,digit-recognizer,nlp,classification
+99,wwsalmon/simple-mnist-nn-from-scratch-numpy-no-tf-keras,simple-mnist-nn-from-scratch-numpy-no-tf-keras.ipynb,"Simple MNIST NN from scratch (numpy, no TF/Keras)",digit-recognizer,nlp,classification
+101,alexisbcook/titanic-tutorial,titanic-tutorial.ipynb,Titanic Tutorial,titanic,no_domain,classification
+104,mrisdal/exploring-survival-on-the-titanic,exploring-survival-on-the-titanic.ipynb,Exploring Survival on the Titanic,titanic,no_domain,classification
+107,gunesevitan/titanic-advanced-feature-engineering-tutorial,titanic-advanced-feature-engineering-tutorial.ipynb,Titanic - Advanced Feature Engineering Tutorial,titanic,no_domain,classification
+113,subinium/simple-matplotlib-visualization-tips,simple-matplotlib-visualization-tips.ipynb,Simple Matplotlib & Visualization Tips 💡,titanic,no_domain,classification
+114,parulpandey/10-simple-hacks-to-speed-up-your-data-analysis,10-simple-hacks-to-speed-up-your-data-analysis.ipynb,10 Simple hacks to speed up your Data Analysis ,titanic,no_domain,classification
+118,erikbruin/titanic-2nd-degree-families-and-majority-voting,titanic-2nd-degree-families-and-majority-voting.ipynb,Titanic: 2nd degree families and majority voting,titanic,no_domain,classification
+120,pmarcelino/comprehensive-data-exploration-with-python,comprehensive-data-exploration-with-python.ipynb,Comprehensive data exploration with Python,house-prices-advanced-regression-techniques,no_domain,regression
+123,dansbecker/submitting-from-a-kernel,submitting-from-a-kernel.ipynb,Submitting From A Kernel,house-prices-advanced-regression-techniques,no_domain,regression
+125,dansbecker/handling-missing-values,handling-missing-values.ipynb,Handling Missing Values,house-prices-advanced-regression-techniques,no_domain,regression
+126,dansbecker/xgboost,xgboost.ipynb,XGBoost,house-prices-advanced-regression-techniques,no_domain,regression
+129,dansbecker/using-categorical-data-with-one-hot-encoding,using-categorical-data-with-one-hot-encoding.ipynb,Using Categorical Data with One Hot Encoding,house-prices-advanced-regression-techniques,no_domain,regression
+130,dansbecker/selecting-and-filtering-in-pandas,selecting-and-filtering-in-pandas.ipynb,Selecting and Filtering in Pandas,house-prices-advanced-regression-techniques,no_domain,regression
+136,ekami66/detailed-exploratory-data-analysis-with-python,detailed-exploratory-data-analysis-with-python.ipynb,Detailed exploratory data analysis with python,house-prices-advanced-regression-techniques,no_domain,regression
+138,marsggbo/kaggle,kaggle.ipynb,房价预测kaggle入门项目,house-prices-advanced-regression-techniques,no_domain,regression
+139,parulpandey/useful-python-libraries-for-data-science,useful-python-libraries-for-data-science.ipynb,Useful Python libraries for Data Science,house-prices-advanced-regression-techniques,no_domain,regression
+140,ajeffries/connectx-getting-started,connectx-getting-started.ipynb,ConnectX Getting Started,connectx,reinforcement learning,no_technique
+144,alexisbcook/create-a-connectx-agent,create-a-connectx-agent.ipynb,Create a ConnectX agent,connectx,reinforcement learning,no_technique
+146,alexisbcook/one-step-lookahead,one-step-lookahead.ipynb,One-Step Lookahead,connectx,reinforcement learning,no_technique
+148,alexisbcook/n-step-lookahead,n-step-lookahead.ipynb,N-Step Lookahead,connectx,reinforcement learning,no_technique
+149,brendan45774/connectx-baseline,connectx-baseline.ipynb,ConnectX Baseline,connectx,reinforcement learning,no_technique
+150,jesperdramsch/intro-to-connextx-env-and-minimax,intro-to-connextx-env-and-minimax.ipynb,Intro to ConnextX Env and Minimax,connectx,reinforcement learning,no_technique
+151,connect4alphazero/alphazero-baseline-connectx,alphazero-baseline-connectx.ipynb,AlphaZero baseline - ConnectX,connectx,reinforcement learning,no_technique
+153,marcovasquez/how-to-play-with-computer-and-check-winner,how-to-play-with-computer-and-check-winner.ipynb,How to Play with Computer and Check Winner 🎮 ,connectx,reinforcement learning,no_technique
+154,tahaakr/exercise-play-the-game,exercise-play-the-game.ipynb,Exercise: Play the Game,connectx,reinforcement learning,no_technique
+155,yegorbiryukov/cell-swarm,cell-swarm.ipynb,Cell Swarm,connectx,reinforcement learning,no_technique
+156,matant/monte-carlo-tree-search-connectx,monte-carlo-tree-search-connectx.ipynb,Monte Carlo Tree Search - ConnectX,connectx,reinforcement learning,no_technique
+157,jamesmcguigan/connectx-mcts-bitboard-bitsquares-heuristic,connectx-mcts-bitboard-bitsquares-heuristic.ipynb,ConnectX - MCTS Bitboard + Bitsquares Heuristic,connectx,reinforcement learning,no_technique
+158,yegorbiryukov/connectx-rule-based,connectx-rule-based.ipynb,ConnectX Rule-Based,connectx,reinforcement learning,no_technique
+159,sidagar/getting-1000-score-using-only-minimax,getting-1000-score-using-only-minimax.ipynb,Getting 1000+ score using only minimax,connectx,reinforcement learning,no_technique
+165,parulpandey/useful-python-libraries-for-data-science,useful-python-libraries-for-data-science.ipynb,Useful Python libraries for Data Science,nlp-getting-started,nlp,classification
+169,andreshg/nlp-glove-bert-tf-idf-lstm-explained,nlp-glove-bert-tf-idf-lstm-explained.ipynb,"NLP 📝 GloVe, BERT, TF-IDF, LSTM... 📝 Explained",nlp-getting-started,nlp,classification
+170,parulpandey/getting-started-with-nlp-a-general-intro,getting-started-with-nlp-a-general-intro.ipynb,Getting started with NLP - A general Intro,nlp-getting-started,nlp,classification
+173,marcovasquez/basic-nlp-with-tensorflow-and-wordcloud,basic-nlp-with-tensorflow-and-wordcloud.ipynb,Basic NLP with TensorFlow and WordCloud📄 ,nlp-getting-started,nlp,classification
+174,yufengg/automl-getting-started-notebook,automl-getting-started-notebook.ipynb,AutoML Getting Started Notebook,nlp-getting-started,nlp,classification
+176,ratan123/start-from-here-disaster-tweets-eda-basic-model,start-from-here-disaster-tweets-eda-basic-model.ipynb,Start From Here : Disaster Tweets EDA+Basic model,nlp-getting-started,nlp,classification
+177,naim99/your-first-nlp-competition-submission,your-first-nlp-competition-submission.ipynb,your first NLP competition submission  ✌✔👀🎶,nlp-getting-started,nlp,classification
+180,odins0n/spaceship-titanic-eda-27-different-models,spaceship-titanic-eda-27-different-models.ipynb,🚀Spaceship Titanic -📊EDA + 27 different models📈,spaceship-titanic,no_domain,classification
+183,azminetoushikwasi/xgboost-wrangling-with-hyperparameters-guide,xgboost-wrangling-with-hyperparameters-guide.ipynb,XGBoost | Wrangling with Hyperparameters | Guide,spaceship-titanic,no_domain,classification
+184,azminetoushikwasi/mastering-bias-variance-tradeoff,mastering-bias-variance-tradeoff.ipynb,Mastering Bias-Variance Tradeoff ,spaceship-titanic,no_domain,classification
+185,usharengaraju/tensorflow-spaceship-neuraldecisionforests,tensorflow-spaceship-neuraldecisionforests.ipynb,🚀🚀[TensorFlow]SpaceShip - NeuralDecisionForests,spaceship-titanic,no_domain,classification
+186,arootda/pycaret-visualization-optimization-0-81,pycaret-visualization-optimization-0-81.ipynb,🚀[Pycaret] Visualization + Optimization (0.81),spaceship-titanic,no_domain,classification
+187,kartushovdanil/mlops-how-to-be-rock-of-ml,mlops-how-to-be-rock-of-ml.ipynb,⚙️ MLops | How to be Rock of ML ⚙️,spaceship-titanic,no_domain,classification
+188,ryanluoli2/a-complete-guide-to-linear-regression,a-complete-guide-to-linear-regression.ipynb,🔥 A Complete Guide to Linear Regression,spaceship-titanic,no_domain,classification
+189,ryanluoli2/a-complete-guide-to-logistic-regression,a-complete-guide-to-logistic-regression.ipynb,🔥 A Complete Guide to Logistic Regression,spaceship-titanic,no_domain,classification
+190,eisgandar/spaceship-titanic-eda-xgboost-80,spaceship-titanic-eda-xgboost-80.ipynb,🌌 Spaceship Titanic - EDA📊 & XGBoost- 80%+🚀,spaceship-titanic,no_domain,classification
+191,georgyzubkov/spaceship-eda-catboost-with-optuna,spaceship-eda-catboost-with-optuna.ipynb,"Spaceship. EDA, CatBoost with Optuna.",spaceship-titanic,no_domain,classification
+192,lordozvlad/spaceship-titanic-fast-kernel-using-sklearnex,spaceship-titanic-fast-kernel-using-sklearnex.ipynb,[Spaceship Titanic] Fast kernel using sklearnex,spaceship-titanic,no_domain,classification
+193,ruchi798/spaceship-titanic-eda-pytorch-baseline-w-b,spaceship-titanic-eda-pytorch-baseline-w-b.ipynb,🚀 Spaceship Titanic: EDA + PyTorch Baseline + W&B,spaceship-titanic,no_domain,classification
+194,ryanluoli2/a-complete-guide-to-decision-trees-ensembles,a-complete-guide-to-decision-trees-ensembles.ipynb,🔥 A Complete Guide to Decision Trees & Ensembles ,spaceship-titanic,no_domain,classification
+195,ryanluoli2/a-complete-guide-to-naive-bayes-classifiers,a-complete-guide-to-naive-bayes-classifiers.ipynb,🔥 A Complete Guide to Naive Bayes Classifiers,spaceship-titanic,no_domain,classification
+196,azminetoushikwasi/ml-foundation-cross-validation-all-methods,ml-foundation-cross-validation-all-methods.ipynb,ML Foundation ➡️ Cross Validation ✅ All Methods,spaceship-titanic,no_domain,classification
+197,ryanluoli2/a-complete-guide-to-k-nearest-neighbours,a-complete-guide-to-k-nearest-neighbours.ipynb,🔥 A Complete Guide to K-Nearest Neighbours,spaceship-titanic,no_domain,classification
+199,ryanluoli2/a-complete-guide-to-support-vector-machine,a-complete-guide-to-support-vector-machine.ipynb,🔥 A Complete Guide to Support Vector Machine,spaceship-titanic,no_domain,classification
+200,karanjakhar/facial-keypoint-detection,facial-keypoint-detection.ipynb,Facial Keypoint Detection ,facial-keypoints-detection,computer vision,regression
+201,balraj98/data-augmentation-for-facial-keypoint-detection,data-augmentation-for-facial-keypoint-detection.ipynb,Data Augmentation for Facial Keypoint Detection,facial-keypoints-detection,computer vision,regression
+202,madhawav/basic-fully-connected-nn,basic-fully-connected-nn.ipynb,Basic Fully Connected NN,facial-keypoints-detection,computer vision,regression
+203,lqdisme/facial-keypoint-detection-cnn-augmentation,facial-keypoint-detection-cnn-augmentation.ipynb,Facial Keypoint Detection - CNN + Augmentation,facial-keypoints-detection,computer vision,regression
+204,kholoudsayed/facial-keypoints-detection,facial-keypoints-detection.ipynb,facial-keypoints-detection,facial-keypoints-detection,computer vision,regression
+205,aparajit0511/facial-keypoint-detection-udacity,facial-keypoint-detection-udacity.ipynb,Facial Keypoint Detection Udacity,facial-keypoints-detection,computer vision,regression
+206,liudmyla/easy-keras-facial-keypoint-detection,easy-keras-facial-keypoint-detection.ipynb,Easy keras facial keypoint detection,facial-keypoints-detection,computer vision,regression
+207,sshikamaru/keras-facial-keypoint-analysis,keras-facial-keypoint-analysis.ipynb,Keras Facial Keypoint Analysis,facial-keypoints-detection,computer vision,regression
+208,obione26/facial-keypoints-detection-keras-albumentations,facial-keypoints-detection-keras-albumentations.ipynb,Facial Keypoints Detection - Keras+Albumentations,facial-keypoints-detection,computer vision,regression
+209,karamcse/image-processing-face-keypoint-detection,image-processing-face-keypoint-detection.ipynb,Image Processing - Face Keypoint Detection,facial-keypoints-detection,computer vision,regression
+210,ritvik1909/facial-keypoint-detection-cnn-aug-tl,facial-keypoint-detection-cnn-aug-tl.ipynb,Facial Keypoint Detection - CNN + Aug + TL,facial-keypoints-detection,computer vision,regression
+211,waynewhying/facial-keypoints-transferlearning-resnet50v2,facial-keypoints-transferlearning-resnet50v2.ipynb,facial-keypoints_TransferLearning_ResNet50V2,facial-keypoints-detection,computer vision,regression
+212,fmak95/facial-keypoint-detection,facial-keypoint-detection.ipynb,Facial_Keypoint_Detection,facial-keypoints-detection,computer vision,regression
+213,utkarsh4430/facial-keypoints-detection-basic-keras-model,facial-keypoints-detection-basic-keras-model.ipynb,Facial Keypoints Detection- Basic Keras Model,facial-keypoints-detection,computer vision,regression
+214,nitron/facial-keypoints-fastai-image-regression,facial-keypoints-fastai-image-regression.ipynb,Facial Keypoints: Fastai image regression,facial-keypoints-detection,computer vision,regression
+215,ajayuser/facial-key-points-detection-preprocessing-guide,facial-key-points-detection-preprocessing-guide.ipynb,Facial Key-points Detection Preprocessing Guide,facial-keypoints-detection,computer vision,regression
+216,phylake1337/2-15-loss-simple-split-trick,2-15-loss-simple-split-trick.ipynb,2.15 Loss - Simple Split Trick,facial-keypoints-detection,computer vision,regression
+217,gakshaygupta/real-time-cnn-architecture,real-time-cnn-architecture.ipynb,real time cnn architecture,facial-keypoints-detection,computer vision,regression
+218,jatingoyal123/facial-keypoint-detection,facial-keypoint-detection.ipynb,facial keypoint detection,facial-keypoints-detection,computer vision,regression
+219,rijuvaish/facial-key-points-detection-using-residual-network,facial-key-points-detection-using-residual-network.ipynb,Facial key Points Detection using Residual Network,facial-keypoints-detection,computer vision,regression
+220,rajmehra03/a-detailed-explanation-of-keras-embedding-layer,a-detailed-explanation-of-keras-embedding-layer.ipynb,A Detailed Explanation of Keras Embedding Layer,word2vec-nlp-tutorial,nlp,classification
+222,alexcherniuk/imdb-review-word2vec-bilstm-99-acc,imdb-review-word2vec-bilstm-99-acc.ipynb,IMDB review Word2Vec & BiLSTM - 99% acc,word2vec-nlp-tutorial,nlp,classification
+223,rohandx1996/google-movie-reviews-sentiment-deep-stack-models,google-movie-reviews-sentiment-deep-stack-models.ipynb,Google movie reviews sentiment Deep stack models ,word2vec-nlp-tutorial,nlp,classification
+224,jayantmathur/imdb-review-data,imdb-review-data.ipynb,IMDB Review Data,word2vec-nlp-tutorial,nlp,classification
+225,nishathakkar/bag-of-words,bag-of-words.ipynb,Bag of Words,word2vec-nlp-tutorial,nlp,classification
+226,xchmiao/popcorn-rnn-model,popcorn-rnn-model.ipynb,Popcorn RNN model,word2vec-nlp-tutorial,nlp,classification
+228,sameerdev7/93-f-score-bag-of-words-m-bags-of-popcorn-with-rf,93-f-score-bag-of-words-m-bags-of-popcorn-with-rf.ipynb,.93 f-score Bag of Words M Bags of Popcorn with RF,word2vec-nlp-tutorial,nlp,classification
+229,kobeerose/meets-bags-of-popcorn-a-beginner-s-notebook,meets-bags-of-popcorn-a-beginner-s-notebook.ipynb,Meets Bags of Popcorn - A Beginner's Notebook,word2vec-nlp-tutorial,nlp,classification
+230,jurk06/sentiment-analysis-part-i,sentiment-analysis-part-i.ipynb,Sentiment Analysis - Part-I,word2vec-nlp-tutorial,nlp,classification
+231,pranjalchatterjee/bag-of-words-word2vec-for-sentiment-analysis,bag-of-words-word2vec-for-sentiment-analysis.ipynb,Bag of Words/Word2Vec for Sentiment Analysis,word2vec-nlp-tutorial,nlp,classification
+232,jatinmittal0001/word2vec,word2vec.ipynb,Word2Vec,word2vec-nlp-tutorial,nlp,classification
+233,bell2psy/practicing-sentimental-analysis,practicing-sentimental-analysis.ipynb,Practicing Sentimental Analysis,word2vec-nlp-tutorial,nlp,classification
+234,rawaaelghali/sentiment-analysis-101-using-word2vec,sentiment-analysis-101-using-word2vec.ipynb,sentiment analysis 101 using Word2Vec,word2vec-nlp-tutorial,nlp,classification
+235,pratikbarua/bag-of-words-meets-bags-of-popcorn,bag-of-words-meets-bags-of-popcorn.ipynb,Bag of Words Meets Bags of Popcorn,word2vec-nlp-tutorial,nlp,classification
+236,yepp2411/baseline-model-using-nn-for-movie-review,baseline-model-using-nn-for-movie-review.ipynb,Baseline model using NN for movie review,word2vec-nlp-tutorial,nlp,classification
+237,yasiradoan/bag-of-words-meets-bags-of-popcorn-randomforest,bag-of-words-meets-bags-of-popcorn-randomforest.ipynb,Bag of Words Meets Bags of Popcorn-RandomForest,word2vec-nlp-tutorial,nlp,classification
+238,revanthrex/sentiment-analysis-with-word2vec,sentiment-analysis-with-word2vec.ipynb,Sentiment Analysis with Word2Vec,word2vec-nlp-tutorial,nlp,classification
+239,jurk06/sentiment-analysis-part-ii,sentiment-analysis-part-ii.ipynb,Sentiment Analysis - Part-II,word2vec-nlp-tutorial,nlp,classification
+242,vigneshprakash/data-science-london-scikit-learn-modeling,data-science-london-scikit-learn-modeling.ipynb,Data Science London + Scikit-learn Modeling,data-science-london-scikit-learn,no_domain,classification
+243,abdelrahmankhalil/data-science-london-scikit-learn,data-science-london-scikit-learn.ipynb,Data Science London + Scikit-learn,data-science-london-scikit-learn,no_domain,classification
+245,gauravduttakiit/binary-classification-autoviz-top-feature,binary-classification-autoviz-top-feature.ipynb,Binary Classification : Autoviz [Top Feature],data-science-london-scikit-learn,no_domain,classification
+246,abdelrhamanfakhry/data-visualization-preprocessing-gridsearchcv,data-visualization-preprocessing-gridsearchcv.ipynb,Data Visualization & Preprocessing & GridSearchCV ,data-science-london-scikit-learn,no_domain,classification
+247,zhengkunzhang/simple-gaussian-lgbm-data-science-london,simple-gaussian-lgbm-data-science-london.ipynb,Simple Gaussian + LGBM: data-science-london,data-science-london-scikit-learn,no_domain,classification
+250,arti1117/hello-scikit-learn,hello-scikit-learn.ipynb,"Hello, scikit-learn!",data-science-london-scikit-learn,no_domain,classification
+252,mohamedahmedae/data-science-london-scikit-learn-practice,data-science-london-scikit-learn-practice.ipynb, Data Science London + Scikit-learn Practice,data-science-london-scikit-learn,no_domain,classification
+254,rocklen/data-science-london-scikit-learn,data-science-london-scikit-learn.ipynb,🏢 Data Science London + Scikit-learn 🏢,data-science-london-scikit-learn,no_domain,classification
+255,bjasma/data-science-london-scikit-learn,data-science-london-scikit-learn.ipynb,Data Science London + Scikit-Learn,data-science-london-scikit-learn,no_domain,classification
+257,ruchibahl18/neural-network-version,neural-network-version.ipynb,Neural Network version,data-science-london-scikit-learn,no_domain,classification
+258,ziadhamadafathy/using-some-models-in-classification-accuracy-95,using-some-models-in-classification-accuracy-95.ipynb,"Using Some Models in classification,  accuracy 95%",data-science-london-scikit-learn,no_domain,classification
+260,irinana/spam-detection-strata2013after-party,spam-detection-strata2013after-party.ipynb,SPAM_Detection  Strata2013After-party,just-the-basics-the-after-party,nlp,classification
+261,meln1337/just-the-basics-notebook,just-the-basics-notebook.ipynb,Just The Basics Notebook,just-the-basics-the-after-party,nlp,classification
+262,nikosavgeros/classification-using-machine-and-deep-learning,classification-using-machine-and-deep-learning.ipynb,Classification using Machine and Deep Learning,just-the-basics-the-after-party,nlp,classification
+263,pythonkumar/xgboost-feat-imp-acc-93,xgboost-feat-imp-acc-93.ipynb,XGBoost + Feat Imp Acc:93%,just-the-basics-the-after-party,nlp,classification
