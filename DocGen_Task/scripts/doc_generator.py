@@ -1,7 +1,11 @@
+from os import truncate
 import nbformat as nbf
 from transformers import PLBartForConditionalGeneration, PLBartTokenizer
+import pandas as pd
 
 
+PLBARTTOKENIZER = PLBartTokenizer.from_pretrained("uclanlp/plbart-python-en_XX", src_lang="python", tgt_lang="en_XX")
+PLBARTMODEL = PLBartForConditionalGeneration.from_pretrained("uclanlp/plbart-python-en_XX")
 
 def check_ipynb(file_path):
     print('Checking file format ...')
@@ -13,16 +17,18 @@ def check_ipynb(file_path):
 
 
 def generate_doc(c):
-    
-    plbarttokenizer = PLBartTokenizer.from_pretrained("uclanlp/plbart-python-en_XX", src_lang="python", tgt_lang="en_XX")
-    plbart_model = PLBartForConditionalGeneration.from_pretrained("uclanlp/plbart-python-en_XX")
+    doc = ''
+    doc_string = ''
+    try :
+        inputs = PLBARTTOKENIZER(c, return_tensors="pt")
+        translated_tokens = PLBARTMODEL.generate(**inputs, decoder_start_token_id=PLBARTTOKENIZER.lang_code_to_id["en_XX"], max_new_tokens=1024)
 
-    inputs = plbarttokenizer(c, return_tensors="pt")
-    translated_tokens = plbart_model.generate(**inputs, decoder_start_token_id=plbarttokenizer.lang_code_to_id["en_XX"], max_new_tokens=20)
+        doc = nbf.v4.new_markdown_cell(PLBARTTOKENIZER.batch_decode(translated_tokens, skip_special_tokens=True)[0])
+        doc_string = PLBARTTOKENIZER.batch_decode(translated_tokens, skip_special_tokens=True)[0]
+    except Exception as e:
+        print(c, e)
 
-    doc = nbf.v4.new_markdown_cell(plbarttokenizer.batch_decode(translated_tokens, skip_special_tokens=True)[0])
-    
-    return doc
+    return (doc, doc_string)
 
 def remove_markdown_cells(notebook):
     print('Removing markdown cells ...')
@@ -79,3 +85,22 @@ def document_notebook(notebook_file):
     print('Documenting the notebook : DONE')
     return filename
 
+
+
+def document_code_cell(code_series):
+
+    doc_list = []
+    for code in code_series:
+        print(code)
+        if is_all_commented(str(code)):
+            doc_list.append('commented')
+        
+        (doc, docstring) = generate_doc(code)
+
+        # print(docstring)
+
+        doc_list.append(docstring)
+    
+    doc_series = pd.Series(doc_list)
+    return doc_series
+        

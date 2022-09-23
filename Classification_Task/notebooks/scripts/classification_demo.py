@@ -1,6 +1,4 @@
-from cProfile import label
 import gradio as gr
-import tempfile
 import gradio_run as grun
 
 def classify(file):
