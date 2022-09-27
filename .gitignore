@@ -15,3 +15,9 @@ cleaned_ntb_scd.csv
 cleaned_ntb_only_en_scd.pkl
 test.ipynb
 text_dataset.pkl
+domain_data.csv
+final_data.csv
+interm_df_260000.pkl
+technique_data.csv
+vect_data_final.csv
+test_data.csv
