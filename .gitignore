@@ -21,3 +21,5 @@ interm_df_260000.pkl
 technique_data.csv
 vect_data_final.csv
 test_data.csv
+data.csv
+new_df.csv
