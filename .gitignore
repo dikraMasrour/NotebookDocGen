@@ -23,3 +23,11 @@ vect_data_final.csv
 test_data.csv
 data.csv
 new_df.csv
+new_df_technique.csv
+vect_0_10000.csv
+vect_10000_20000.csv
+vect_20000-30000.csv
+vect_30000_40000.csv
+vect_40000_50000.csv
+vect_50000_60000.csv
+vect_70000.csv
