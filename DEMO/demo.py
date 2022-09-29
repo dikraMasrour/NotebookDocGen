@@ -10,43 +10,74 @@ st.set_page_config(
     page_title="Magic notebook",
     page_icon="✨",
 )
+# st.sidebar.markdown("# Main Page ❄️")
 
 # session state initializing
 du.initialize_session(st.session_state)
 
 
 # title
-st.title("Generated documentation for your DS & ML notebooks")
+magic = du.load_text("streamlit_awesome\magic_icon.md")
+st.write(magic, unsafe_allow_html=True)
 
 # about section
 with st.expander("About the app"):
 
-    st.write(
-        """     
-No time to comment all your code cells ? Need quick way to organise your notebooks but domain and technique ? We've got you covered ! 
-\nCheck out our repo [Here !](https://github.com/dikraMasrour/NotebookDocGen)
-	    """
-    )
+    st.markdown("No time to comment all your code cells ? Need a quick way to organise your notebooks by domains and techniques used? We've got you covered !")
+    css_example = du.load_text('streamlit_awesome\github_icon.md')
+    st.write(css_example, unsafe_allow_html=True)
+
+
 
 
 # decide whether to upload a notebook or work on the app
 with st.container():
     upload_nb = st.radio(
     "I have a notebook to upload !",
-    ('-','Yes', 'No'))
+    ('Yes !', "No, I want to use the app's interface"))
 
 
 # horizontal divider
 '''
 ---
+
+
 '''
 
+
+
+
+
+
+
 print(st.session_state.start_button, upload_nb)
-if upload_nb == 'Yes':
+if upload_nb == 'Yes !':
     print(st.session_state.start_button, upload_nb)
     du.show_upload_form(st.session_state)
     print(st.session_state.start_button, upload_nb)
+
+elif upload_nb == "No, I want to use the app's interface":
+    st.session_state.addButton = st.button('add code cell')
+
+
+    dict_len = len(st.session_state.codeCells)
+
+    if st.session_state.addButton:
+        st.session_state.codeCells[dict_len] = 'write code'
+
+
+    for codecell in st.session_state.codeCells.copy():
         
+        with st.container() as c: 
+            coll, colr = st.columns([4,2])
+            with coll:
+                code =  st_ace(placeholder=codecell, language='python', height=80, auto_update=True)
+            
+            st.session_state.codeCells[codecell] = str(code)
+
+            with colr:
+                st.write(st.session_state.codeCells[codecell])
+
 
 # @st.cache
 # def load_data(nrows):
@@ -106,8 +137,6 @@ if upload_nb == 'Yes':
 
 # if 'codeCells' not in st.session_state:
 #     st.session_state.codeCells = {}
-#     print('TYPEEEE', type(st.session_state.codeCells))
-
 
 # st.session_state.addButton = st.button('add code cell')
 

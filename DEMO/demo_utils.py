@@ -36,12 +36,16 @@ def initialize_session(session_state):
         session_state.uploaded_file = None
     if 'go_back_main' not in session_state:
         session_state.go_back_main = False
+    if 'codeCells' not in st.session_state:
+        st.session_state.codeCells = {}
+
         
 
 
 def show_upload_form(session_state):
     with st.container():
-        st.markdown("## 📋 Upload your notebook")
+        upload_title = load_text('streamlit_awesome\\upload_icon.md')
+        st.write(upload_title, unsafe_allow_html=True)
         st.warning("Note : Not all notebooks have a specific Domain and Technique!")
 
         session_state.uploaded_file = st.file_uploader("Please upload a .ipynb file")
@@ -53,3 +57,9 @@ def show_upload_form(session_state):
             if session_state.upload_submit_button:
                 switch_page('upload_nb_page')
 
+
+
+def load_text(file_path):
+    """A convenience function for reading in the files used for the site's text"""
+    with open(file_path) as in_file:
+        return in_file.read()

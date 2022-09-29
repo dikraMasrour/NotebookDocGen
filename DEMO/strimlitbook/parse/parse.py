@@ -278,7 +278,8 @@ class Code(Cell):
             return None
 
         # Store all parsing functions in the order of importance
-        parsing_functions = [_parse_stream_output, _parse_plotly_output, _parse_image_output,
+        parsing_functions = [_parse_stream_output, _parse_plotly_output,
+                             _parse_html_output, _parse_image_output,
                              _parse_plain_text_output, _parse_error_output]
 
         # Empty list to store parsed outputs
@@ -328,8 +329,10 @@ class Code(Cell):
 
         for output in self._outputs:
             for key, value in output.items():
-                display_keys[key](value)
-
+                try:
+                    display_keys[key](value)
+                except Exception:
+                    continue
     def display(self):
         """
         High-level display function to display cell source and outputs based on tags.

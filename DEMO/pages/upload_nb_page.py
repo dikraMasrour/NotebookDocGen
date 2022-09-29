@@ -1,4 +1,3 @@
-from opcode import stack_effect
 from numpy import byte
 import streamlit as st
 from streamlit_ace import st_ace
@@ -8,12 +7,13 @@ import json
 import streamlit_modal as sm
 import streamlit.components.v1 as components
 
-DUMP_PATH = 'C:\\Users\\zbook\\Documents\\GitHub\\NotebookDocGen\\UI\\'
+DUMP_PATH = 'C:\\Users\\zbook\\Documents\\GitHub\\NotebookDocGen\\DEMO\\'
 
 st.set_page_config(
     page_title="Magic notebook",
     page_icon="✨",
 )
+st.sidebar.markdown("# Upload your notebook Page🎉")
 
 
 # session state initializing
@@ -28,24 +28,30 @@ if st.session_state.uploaded_file == None:
         du.switch_page('demo')
 else:
 
-    indent, class_but, doc_but = st.columns([5, 1, 2], gap='small')
+    indent, class_but, doc_but, go_but = st.columns([2, 4, 4, 1], gap='small')
 
     with class_but:
-        st.button('Classify')
+        classify = st.multiselect('Classify the notebook by', ['Domain', 'Technique'], help='help')
     with doc_but:
-        st.button('Generate doc')
-
+        gendoc = st.selectbox('Generate documentation using', ('-', 'PLBART'), help='help')
+    with go_but:
+        if (len(classify) != 0) | (gendoc != '-'):
+            go_button = st.button('Go!')
+    
 
 
     byte_nb = st.session_state.uploaded_file
     json_nb = json.loads(byte_nb)
 
-    with open(DUMP_PATH + 'dump.json', 'w', encoding='utf-8-sig') as json_dump:
+    with open(DUMP_PATH + 'dump.json', 'w+', encoding='utf-8-sig') as json_dump:
         json.dump(json_nb, json_dump)
 # print(json_nb)
 
 
-## TODO : convert byte data to nb or json locally then pass path to strimlitbook
+# '''TODO : prep help strings 
+#  implement models
+# '''
+
 
 
     nb = read_ipynb(DUMP_PATH + 'dump.json')
