@@ -24,7 +24,7 @@ with st.expander("About the app"):
     st.write(
         """     
 No time to comment all your code cells ? Need quick way to organise your notebooks but domain and technique ? We've got you covered ! 
-\nCheck our repo [Here !](https://github.com/dikraMasrour/NotebookDocGen)
+\nCheck out our repo [Here !](https://github.com/dikraMasrour/NotebookDocGen)
 	    """
     )
 

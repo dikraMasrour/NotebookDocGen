@@ -34,6 +34,8 @@ def initialize_session(session_state):
         session_state.upload_submit_button = False
     if 'uploaded_file' not in session_state:
         session_state.uploaded_file = None
+    if 'go_back_main' not in session_state:
+        session_state.go_back_main = False
         
 
 
@@ -41,13 +43,11 @@ def show_upload_form(session_state):
     with st.container():
         st.markdown("## 📋 Upload your notebook")
         st.warning("Note : Not all notebooks have a specific Domain and Technique!")
-    
-        domain = st.checkbox('Domain')
-        technique = st.checkbox('Technique')
+
         session_state.uploaded_file = st.file_uploader("Please upload a .ipynb file")
         # print(session_state.uploaded_file)
         if session_state.uploaded_file != None:
-            print(session_state.uploaded_file)
+            # print(session_state.uploaded_file)
             session_state.uploaded_file = session_state.uploaded_file.read()
             session_state.upload_submit_button = st.button("Let's go !")
             if session_state.upload_submit_button:

@@ -278,8 +278,7 @@ class Code(Cell):
             return None
 
         # Store all parsing functions in the order of importance
-        parsing_functions = [_parse_stream_output, _parse_plotly_output,
-                             _parse_html_output, _parse_image_output,
+        parsing_functions = [_parse_stream_output, _parse_plotly_output, _parse_image_output,
                              _parse_plain_text_output, _parse_error_output]
 
         # Empty list to store parsed outputs
