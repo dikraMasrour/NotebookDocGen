@@ -47,7 +47,9 @@ def show_upload_form(session_state):
         session_state.uploaded_file = st.file_uploader("Please upload a .ipynb file")
         # print(session_state.uploaded_file)
         if session_state.uploaded_file != None:
-            bytes_data = session_state.uploaded_file.read()
+            print(session_state.uploaded_file)
+            session_state.uploaded_file = session_state.uploaded_file.read()
             session_state.upload_submit_button = st.button("Let's go !")
-    session_state.start_button = True
+            if session_state.upload_submit_button:
+                switch_page('upload_nb_page')
 
