@@ -13,9 +13,9 @@ import os
 #  implement models
 # '''
 
-DUMP_PATH_COM = r'C:\Users\dmasrour\Documents\NotebookDocGen\DEMO'
-DUMP_PATH = 'C:\\Users\\dmasrour\\Documents\\NotebookDocGen\\DEMO\\'
-RUN_PATH = r'C:\Users\dmasrour\Documents\NotebookDocGen\Classification_Task\notebooks\scripts\run.py'
+DUMP_PATH_COM = r'DEMO'
+# DUMP_PATH = 'C:\\Users\\dmasrour\\Documents\\NotebookDocGen\\DEMO\\'
+RUN_PATH = r'..\Classification_Task\notebooks\scripts\run.py'
 
 
 st.set_page_config(
@@ -61,12 +61,12 @@ else:
     byte_nb = st.session_state.uploaded_file
     json_nb = json.loads(byte_nb)
 
-    with open(DUMP_PATH + 'dump.json', 'w+', encoding='utf-8-sig') as json_dump:
+    with open('dump.json', 'w+', encoding='utf-8-sig') as json_dump:
         json.dump(json_nb, json_dump)
 
 
     if ('Domain' in classify) and (len(classify) == 1) and (top_go_button):
-        os.system('python ' + RUN_PATH + ' ' + DUMP_PATH_COM + '\dump.json ' + '--class domain >> file.txt')
+        os.system('python ' + RUN_PATH + ' ' + 'dump.json ' + '--class domain >> file.txt')
         with open('file.txt') as f:
             contents = str(f.readlines()[-1])
 
@@ -116,5 +116,5 @@ else:
 
 
 
-    nb = read_ipynb(DUMP_PATH + 'dump.json')
+    nb = read_ipynb('dump.json')
     nb.display()

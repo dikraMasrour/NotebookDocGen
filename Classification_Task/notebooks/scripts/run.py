@@ -54,6 +54,7 @@ def main():
         
         if args.classification == 'technique':      
             tech = tmi.technique_classification(vect_ntb)
+            
         if args.classification == 'both':      
             tech = tmi.technique_classification(vect_ntb)
             dom = dmi.domain_classification(vect_ntb)
