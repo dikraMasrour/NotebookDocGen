@@ -10,22 +10,22 @@ st.set_page_config(
     page_title="Magic notebook",
     page_icon="✨",
 )
-# st.sidebar.markdown("# Main Page ❄️")
+
 
 # session state initializing
 du.initialize_session(st.session_state)
 
 
 # title
-magic = du.load_text("streamlit_awesome\magic_icon.md")
+magic = du.load_text("streamlit_awesome-main\magic_icon.md")
 st.write(magic, unsafe_allow_html=True)
 
 # about section
 with st.expander("About the app"):
 
     st.markdown("No time to comment all your code cells ? Need a quick way to organise your notebooks by domains and techniques used? We've got you covered !")
-    css_example = du.load_text('streamlit_awesome\github_icon.md')
-    st.write(css_example, unsafe_allow_html=True)
+    github_icon = du.load_text('streamlit_awesome-main\github_icon.md')
+    st.write(github_icon, unsafe_allow_html=True)
 
 
 
@@ -40,30 +40,20 @@ with st.container():
 # horizontal divider
 '''
 ---
-
-
 '''
 
 
-
-
-
-
-
-print(st.session_state.start_button, upload_nb)
 if upload_nb == 'Yes !':
-    print(st.session_state.start_button, upload_nb)
     du.show_upload_form(st.session_state)
-    print(st.session_state.start_button, upload_nb)
 
 elif upload_nb == "No, I want to use the app's interface":
-    st.session_state.addButton = st.button('add code cell')
-
-
+    add = du.load_text('streamlit_awesome-main\\add_icon.md')
+    st.session_state.addButton = st.button(' ➕ Add code cell')
+    
     dict_len = len(st.session_state.codeCells)
 
     if st.session_state.addButton:
-        st.session_state.codeCells[dict_len] = 'write code'
+        st.session_state.codeCells[dict_len] = 'Write your code'
 
 
     for codecell in st.session_state.codeCells.copy():
@@ -71,9 +61,9 @@ elif upload_nb == "No, I want to use the app's interface":
         with st.container() as c: 
             coll, colr = st.columns([4,2])
             with coll:
-                code =  st_ace(placeholder=codecell, language='python', height=80, auto_update=True)
+                code =  st_ace(placeholder=str(codecell), language='python', height=80, auto_update=True)
             
-            st.session_state.codeCells[codecell] = str(code)
+            st.session_state.codeCells[codecell] = code
 
             with colr:
                 st.write(st.session_state.codeCells[codecell])

@@ -36,15 +36,21 @@ def initialize_session(session_state):
         session_state.uploaded_file = None
     if 'go_back_main' not in session_state:
         session_state.go_back_main = False
+    if 'go_back_main02' not in session_state:
+        session_state.go_back_main02 = False
     if 'codeCells' not in st.session_state:
         st.session_state.codeCells = {}
-
-        
+    if 'domain' not in st.session_state:
+        st.session_state.domain = 'No domain'
+    if 'technique' not in st.session_state:
+        st.session_state.technique = 'No technique'
+    if 'both' not in st.session_state:
+        st.session_state.both = 'No domain or technique'
 
 
 def show_upload_form(session_state):
     with st.container():
-        upload_title = load_text('streamlit_awesome\\upload_icon.md')
+        upload_title = load_text('streamlit_awesome-main\\upload_icon.md')
         st.write(upload_title, unsafe_allow_html=True)
         st.warning("Note : Not all notebooks have a specific Domain and Technique!")
 
@@ -63,3 +69,20 @@ def load_text(file_path):
     """A convenience function for reading in the files used for the site's text"""
     with open(file_path) as in_file:
         return in_file.read()
+
+
+
+def prep_classification(contents):
+        
+        contents = contents.replace(']', '')
+        contents = contents.replace('[', '')
+        contents = contents.replace('\n', '')  
+        contents = contents.replace('"', '')
+        contents = contents.replace('(', '')
+        contents = contents.replace(')', '')
+        contents = contents.replace("'", '')
+        list = contents.split(',')
+        print(list)
+        domain = list[0]
+        technique = list[1]
+        return domain, technique

@@ -52,7 +52,7 @@ def check_lang_content(clean_md):
 
 def read_notebook_cells(file_path):
     # get notebook from path and return dataframe of all its cells 
-    with open(file_path, 'r', encoding='utf-8') as nb:
+    with open(file_path, 'r', encoding='utf-8-sig') as nb:
         notebook = json.load(nb) # read JSON file from path (this is a dict)
         df = pd.DataFrame(notebook['cells'], columns=['cell_type', 'source']) # parse JSON into Pandas Dataframe
 
@@ -111,7 +111,6 @@ def preprocess(file_path):
     # if not check_lang_title(file_path):
     #     print('Preprocessing failed : Please enter an english notebook title')
     #     exit()
-
     raw_df = read_notebook_cells(file_path)
     remove_raw(raw_df)
     check_source_format(raw_df)

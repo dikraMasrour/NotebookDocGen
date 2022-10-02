@@ -1,24 +1,34 @@
+import subprocess
 from numpy import byte
 import streamlit as st
 from streamlit_ace import st_ace
 import demo_utils as du
 from strimlitbook.reader import read_ipynb
 import json
-import streamlit_modal as sm
-import streamlit.components.v1 as components
+import os
 
-DUMP_PATH = 'C:\\Users\\zbook\\Documents\\GitHub\\NotebookDocGen\\DEMO\\'
+
+# '''TODO : 
+#  prep help strings 
+#  implement models
+# '''
+
+DUMP_PATH_COM = r'DEMO'
+# DUMP_PATH = 'C:\\Users\\dmasrour\\Documents\\NotebookDocGen\\DEMO\\'
+RUN_PATH = r'..\Classification_Task\notebooks\scripts\run.py'
+
 
 st.set_page_config(
     page_title="Magic notebook",
     page_icon="✨",
 )
+
+
 st.sidebar.markdown("# Upload your notebook Page🎉")
 
 
 # session state initializing
 du.initialize_session(st.session_state)
-
 
 
 if st.session_state.uploaded_file == None:
@@ -28,48 +38,83 @@ if st.session_state.uploaded_file == None:
         du.switch_page('demo')
 else:
 
-    indent, class_but, doc_but, go_but = st.columns([2, 4, 4, 1], gap='small')
+    indent, top_class_but, top_doc_but, top_go_but = st.columns([2, 5, 4, 1], gap='small')
 
-    with class_but:
+    with indent:
+        st.write(' ')
+        st.write(' ')
+        st.session_state.go_back_main02 =  st.button('Upload another notebook')
+        if st.session_state.go_back_main02:
+            du.switch_page('demo')
+    with top_class_but:
         classify = st.multiselect('Classify the notebook by', ['Domain', 'Technique'], help='help')
-    with doc_but:
+    with top_doc_but:
         gendoc = st.selectbox('Generate documentation using', ('-', 'PLBART'), help='help')
-    with go_but:
+    with top_go_but:
         if (len(classify) != 0) | (gendoc != '-'):
-            go_button = st.button('Go!')
+            st.write(' ')
+            st.write(' ')
+            top_go_button = st.button('Go!')
     
-
+  
 
     byte_nb = st.session_state.uploaded_file
     json_nb = json.loads(byte_nb)
 
-    with open(DUMP_PATH + 'dump.json', 'w+', encoding='utf-8-sig') as json_dump:
+    with open('dump.json', 'w+', encoding='utf-8-sig') as json_dump:
         json.dump(json_nb, json_dump)
-# print(json_nb)
 
 
-# '''TODO : prep help strings 
-#  implement models
-# '''
+    if ('Domain' in classify) and (len(classify) == 1) and (top_go_button):
+        os.system('python ' + RUN_PATH + ' ' + 'dump.json ' + '--class domain >> file.txt')
+        with open('file.txt') as f:
+            contents = str(f.readlines()[-1])
+
+        dom, tech = du.prep_classification(contents)
+        st.session_state.domain = dom
+        # horizontal divider
+        '''
+        ---
+        '''
+        st.write("Your notebook's domain is : ", st.session_state.domain.strip().capitalize())
+        '''
+        ---
+        '''
+
+    elif ('Technique' in classify) and (len(classify) == 1) and (top_go_button):
+        os.system('python ' + RUN_PATH + ' ' + DUMP_PATH_COM + '\dump.json ' + '--class technique >> file.txt')
+        with open('file.txt') as f:
+            contents = str(f.readlines()[-1])
+
+        dom, tech = du.prep_classification(contents)
+        st.session_state.technique = tech
+        # horizontal divider
+        '''
+        ---
+        '''
+        st.write("Your notebook's technique is : ", st.session_state.technique.strip().capitalize())
+        '''
+        ---
+        '''
+
+    elif ('Technique' in classify) and ('Domain' in classify) and (top_go_button):
+        os.system('python ' + RUN_PATH + ' ' + DUMP_PATH_COM + '\dump.json ' + '--class both >> file.txt')
+        with open('file.txt') as f:
+            contents = str(f.readlines()[-1])
+
+        dom, tech = du.prep_classification(contents)
+        dom, tech = str(dom).strip().capitalize(), str(tech).strip().capitalize()
+        st.session_state.both = (dom, tech)
+        # horizontal divider
+        '''
+        ---
+        '''
+        st.write("Your notebook's domain & technique are : ", st.session_state.both[0], ' & ', st.session_state.both[1])
+        '''
+        ---
+        '''
 
 
 
-    nb = read_ipynb(DUMP_PATH + 'dump.json')
+    nb = read_ipynb('dump.json')
     nb.display()
-
-# st.title("Generated documentation for your DS & ML notebooks")
-# st.header("")
-
-
-# with st.expander(" About the app"):
-
-#     st.write(
-#         """     
-
-# The *Generated documentation for your DS & ML notebooks* app is an easy-to-use interface where you can uploade your notebook containning only code cells and get in return a commented notebook !
-
-# 	    """
-#     )
-
-
-
