@@ -1,4 +1,4 @@
-# NotebookCodeGen
+# NotebookDocGen
 
 ## Description
 Our machine learning project consists of building a tool that improves Data Science & Machine Learning experts and learners’ experience of writing notebooks and organizing them. The features include: the classification of the notebooks by ML domains it belongs to (NLP, computer vision and reinforcement learning), and techniques it uses (classification, clustering and regression). As well as the automatic generation of documentation for individual code cells in a notebook.
@@ -13,13 +13,13 @@ All these features are showcased in a Streamlit web application offering users t
 
 ## Features
 
-- Classification of the notebooks by ML domains : **NLP** , **Computer Vision** and **Reinforcement Learning** .
-- Classification of the notebooks by ML techniques : **Regression** , **Classification** and **Clustering** .
-- Automatic generation of documentation for individual code cells for a notebook .
+- Classification of the notebooks by ML domains : **NLP** , **Computer Vision** and **Reinforcement Learning**.
+- Classification of the notebooks by ML techniques : **Regression** , **Classification** and **Clustering**.
+- Automatic generation of documentation for individual code cells for a notebook.
 
 ## Tech Stack
 
-**Data Analysis :** Pandas,numpy,regex,plotly,matplotlib,seaborn,nltk,tokenize...
+**Data Analysis :** Pandas, numpy, regex, plotly, matplotlib, seaborn, nltk, tokenize...
 
 **Modeling :** Torch,scikit-learn
 
