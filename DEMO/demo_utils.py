@@ -1,4 +1,8 @@
 import streamlit as st
+import os
+import streamlit_ace as st_ace
+import json
+from strimlitbook.reader import read_ipynb
 
 
 
@@ -50,19 +54,20 @@ def initialize_session(session_state):
 
 def show_upload_form(session_state):
     with st.container():
+        # upload icon
         upload_title = load_text('streamlit_awesome-main\\upload_icon.md')
         st.write(upload_title, unsafe_allow_html=True)
+
         st.warning("Note : Not all notebooks have a specific Domain and Technique!")
 
-        session_state.uploaded_file = st.file_uploader("Please upload a .ipynb file")
-        # print(session_state.uploaded_file)
+        session_state.uploaded_file = st.file_uploader("Please upload a .ipynb file", accept_multiple_files=False, type='ipynb')
+        
         if session_state.uploaded_file != None:
-            # print(session_state.uploaded_file)
+            
             session_state.uploaded_file = session_state.uploaded_file.read()
             session_state.upload_submit_button = st.button("Let's go !")
             if session_state.upload_submit_button:
                 switch_page('upload_nb_page')
-
 
 
 def load_text(file_path):
@@ -83,6 +88,20 @@ def prep_classification(contents):
         contents = contents.replace("'", '')
         list = contents.split(',')
         print(list)
-        domain = list[0]
-        technique = list[1]
+        domain = list[0].strip().capitalize()
+        technique = list[1].strip().capitalize()
         return domain, technique
+
+
+
+def display_nb():
+    # load user's notebook as json
+    byte_nb = st.session_state.uploaded_file
+    json_nb = json.loads(byte_nb)
+
+    # dump it locally 
+    with open('dump.json', 'w+', encoding='utf-8-sig') as json_dump:
+        json.dump(json_nb, json_dump)  
+
+    nb = read_ipynb('dump.json')
+    nb.display()

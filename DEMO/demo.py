@@ -47,7 +47,6 @@ if upload_nb == 'Yes !':
     du.show_upload_form(st.session_state)
 
 elif upload_nb == "No, I want to use the app's interface":
-    add = du.load_text('streamlit_awesome-main\\add_icon.md')
     st.session_state.addButton = st.button(' ➕ Add code cell')
     
     dict_len = len(st.session_state.codeCells)
@@ -69,6 +68,13 @@ elif upload_nb == "No, I want to use the app's interface":
                 st.write(st.session_state.codeCells[codecell])
 
 
+
+
+
+
+
+
+    
 # @st.cache
 # def load_data(nrows):
 #     data = pd.read_csv(DATAURL, nrows=nrows)

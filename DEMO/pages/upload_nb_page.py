@@ -1,11 +1,9 @@
-import subprocess
-from numpy import byte
 import streamlit as st
-from streamlit_ace import st_ace
 import demo_utils as du
-from strimlitbook.reader import read_ipynb
 import json
 import os
+import streamlit_ace as st_ace
+from strimlitbook.reader import read_ipynb
 
 
 # '''TODO : 
@@ -14,16 +12,17 @@ import os
 # '''
 
 DUMP_PATH_COM = r'DEMO'
-# DUMP_PATH = 'C:\\Users\\dmasrour\\Documents\\NotebookDocGen\\DEMO\\'
 RUN_PATH = r'..\Classification_Task\notebooks\scripts\run.py'
 
 
+
+# page config
 st.set_page_config(
     page_title="Magic notebook",
     page_icon="✨",
 )
 
-
+# sidebar
 st.sidebar.markdown("# Upload your notebook Page🎉")
 
 
@@ -36,20 +35,28 @@ if st.session_state.uploaded_file == None:
     st.session_state.go_back_main =  st.button('Main page')
     if st.session_state.go_back_main:
         du.switch_page('demo')
+
 else:
 
     indent, top_class_but, top_doc_but, top_go_but = st.columns([2, 5, 4, 1], gap='small')
 
+    # back button
     with indent:
         st.write(' ')
         st.write(' ')
         st.session_state.go_back_main02 =  st.button('Upload another notebook')
         if st.session_state.go_back_main02:
             du.switch_page('demo')
+
+    # classification
     with top_class_but:
         classify = st.multiselect('Classify the notebook by', ['Domain', 'Technique'], help='help')
+
+    # doc gen
     with top_doc_but:
         gendoc = st.selectbox('Generate documentation using', ('-', 'PLBART'), help='help')
+
+    # go button
     with top_go_but:
         if (len(classify) != 0) | (gendoc != '-'):
             st.write(' ')
@@ -58,63 +65,58 @@ else:
     
   
 
-    byte_nb = st.session_state.uploaded_file
-    json_nb = json.loads(byte_nb)
-
-    with open('dump.json', 'w+', encoding='utf-8-sig') as json_dump:
-        json.dump(json_nb, json_dump)
+ 
 
 
+    # classify by domain
     if ('Domain' in classify) and (len(classify) == 1) and (top_go_button):
         os.system('python ' + RUN_PATH + ' ' + 'dump.json ' + '--class domain >> file.txt')
         with open('file.txt') as f:
             contents = str(f.readlines()[-1])
-
+        
         dom, tech = du.prep_classification(contents)
-        st.session_state.domain = dom
         # horizontal divider
         '''
         ---
         '''
-        st.write("Your notebook's domain is : ", st.session_state.domain.strip().capitalize())
+        st.write("Your notebook's domain is : ", dom)
         '''
         ---
         '''
+        
 
+
+    # classify by technique
     elif ('Technique' in classify) and (len(classify) == 1) and (top_go_button):
-        os.system('python ' + RUN_PATH + ' ' + DUMP_PATH_COM + '\dump.json ' + '--class technique >> file.txt')
+        os.system('python ' + RUN_PATH + ' ' + 'dump.json ' + '--class technique >> file.txt')
         with open('file.txt') as f:
             contents = str(f.readlines()[-1])
 
         dom, tech = du.prep_classification(contents)
-        st.session_state.technique = tech
-        # horizontal divider
+        # # horizontal divider
         '''
         ---
         '''
-        st.write("Your notebook's technique is : ", st.session_state.technique.strip().capitalize())
+        st.write("Your notebook's technique is : ", tech)
         '''
         ---
         '''
+        
 
+    # classify by both
     elif ('Technique' in classify) and ('Domain' in classify) and (top_go_button):
-        os.system('python ' + RUN_PATH + ' ' + DUMP_PATH_COM + '\dump.json ' + '--class both >> file.txt')
+        os.system('python ' + RUN_PATH + ' ' + 'dump.json ' + '--class both >> file.txt')
         with open('file.txt') as f:
             contents = str(f.readlines()[-1])
 
-        dom, tech = du.prep_classification(contents)
-        dom, tech = str(dom).strip().capitalize(), str(tech).strip().capitalize()
-        st.session_state.both = (dom, tech)
+        dom, tech = du.prep_classification(contents)    
         # horizontal divider
         '''
         ---
         '''
-        st.write("Your notebook's domain & technique are : ", st.session_state.both[0], ' & ', st.session_state.both[1])
-        '''
+        st.write("Your notebook's domain & technique are : ", dom, ' & ', tech) 
+        '''       
         ---
         '''
 
-
-
-    nb = read_ipynb('dump.json')
-    nb.display()
+    du.display_nb()
