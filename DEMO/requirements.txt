@@ -15,3 +15,4 @@ streamlit_card==0.0.3
 streamlit_tags==1.2.8
 torch==1.12.1
 transformers==4.22.0
+scikit-learn==1.1.2
