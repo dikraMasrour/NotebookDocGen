@@ -1,4 +1,3 @@
-from os import truncate
 import nbformat as nbf
 from transformers import PLBartForConditionalGeneration, PLBartTokenizer
 import pandas as pd
