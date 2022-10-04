@@ -3,6 +3,16 @@ import dom_model_invoker as dmi
 import tech_model_invoker as tmi
 import preprocessor as prep
 import embedder as e
+import subprocess
+import sys
+
+# implement pip as a subprocess:
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+'sklearn'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+'pandas'])
+
+
 
 '''
 - pass notebook to preprocessor as json in args + test if cells are a list + test if nb is .ipynb + test if english nb
