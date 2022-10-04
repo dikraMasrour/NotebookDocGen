@@ -88,17 +88,20 @@ else:
 
     # classify by domain
     if ('Domain' in classify) and (len(classify) == 1) and (top_go_button):
-        os.system('python ' + CLASS_RUN_PATH + ' ' + 'dump.json ' + '--class domain >> file.txt')
-        with open('file.txt') as f:
-            contents = str(f.readlines()[-1])
-        
-        dom, tech = du.prep_classification(contents)
+
+        if st.session_state.domain == None:
+            os.system('python ' + CLASS_RUN_PATH + ' ' + 'dump.json ' + '--class domain >> file.txt')
+
+            with open('file.txt') as f:
+                contents = str(f.readlines()[-1])
+            
+            st.session_state.domain, st.session_state.technique = du.prep_classification(contents)
         # horizontal divider
         '''
         ---
         '''
         # st.write("Your notebook's domain is : ", dom)
-        st.metric(label='Domain', value=dom)
+        st.metric(label='Domain', value=st.session_state.domain, delta='Predicted')
         '''
         ---
         '''
@@ -107,17 +110,19 @@ else:
 
     # classify by technique
     elif ('Technique' in classify) and (len(classify) == 1) and (top_go_button):
-        os.system('python ' + CLASS_RUN_PATH + ' ' + 'dump.json ' + '--class technique >> file.txt')
-        with open('file.txt') as f:
-            contents = str(f.readlines()[-1])
 
-        dom, tech = du.prep_classification(contents)
+        if st.session_state.technique == None:
+            os.system('python ' + CLASS_RUN_PATH + ' ' + 'dump.json ' + '--class technique >> file.txt')
+            with open('file.txt') as f:
+                contents = str(f.readlines()[-1])
+
+            st.session_state.domain, st.session_state.technique = du.prep_classification(contents)
         # # horizontal divider
         '''
         ---
         '''
         # st.write("Your notebook's technique is : ", tech) 
-        st.metric(label='Technique', value=tech)
+        st.metric(label='Technique', value=st.session_state.technique, delta='Predicted')
         '''
         ---
         '''
@@ -129,18 +134,18 @@ else:
         with open('file.txt') as f:
             contents = str(f.readlines()[-1])
 
-        dom, tech = du.prep_classification(contents)    
+        st.session_state.domain, st.session_state.technique = du.prep_classification(contents)    
         # horizontal divider
         '''
         ---
         '''
         # st.write("Your notebook's domain & technique are : ", dom, ' & ', tech) 
         # st.button(dom, disabled=True)
-        l, r, nada = st.columns([1,1,5])
+        l, r = st.columns(2)
         with l:
-            st.metric(label='Domain', value=dom)
+            st.metric(label='Domain', value=st.session_state.domain, delta='Predicted')
         with r:
-            st.metric(label='Technique', value=tech)
+            st.metric(label='Technique', value=st.session_state.technique, delta='Predicted')
         
         '''       
         ---
@@ -148,8 +153,10 @@ else:
     
     
 
-    if (gendoc == 'PLBART') and (top_go_button) and not(st.session_state.documented):
-        os.system('python ' + DOCGEN_RUN_PATH + ' ' + 'dump.json')
+    if (gendoc == 'PLBART') and (top_go_button):
+
+        if not(st.session_state.documented):
+            os.system('python ' + DOCGEN_RUN_PATH + ' ' + 'dump.json')
         with open('dump_PLBART_documented.ipynb', encoding='utf-8-sig') as doc_nb:
                 
             if '.json' in str(st.session_state.uploaded_file_name):
@@ -164,7 +171,7 @@ else:
                 label="🎉 Download your documented notebook here ! 🎉",
                 data=doc_nb,
                 file_name=str(st.session_state.uploaded_file_name) + '_PLBART_documented.ipynb',
-                mime='application/ipynb+json'
+                mime='application/ipynb+json',
                 )
         display_gen_nb()
         st.session_state.documented = True

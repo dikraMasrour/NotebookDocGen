@@ -54,6 +54,10 @@ def initialize_session(session_state):
         st.session_state.both = 'No domain or technique'
     if 'documented' not in st.session_state:
         st.session_state.documented = False
+    if 'domain' not in st.session_state:
+        st.session_state.domain = None
+    if 'technique' not in st.session_state:
+        st.session_state.technique = None
 
 
 def show_upload_form(session_state):

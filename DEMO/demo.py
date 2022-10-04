@@ -23,6 +23,8 @@ def show_upload_form(session_state):
             st.session_state.upload_submit_button = st.button("Let's go !")
             if st.session_state.upload_submit_button:
                 st.session_state.documented = False
+                st.session_state.domain = None
+                st.session_state.technique = None
                 du.switch_page('upload_nb_page')
 
 
