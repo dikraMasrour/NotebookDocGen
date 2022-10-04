@@ -4,16 +4,36 @@ import json
 import os
 import streamlit_ace as st_ace
 from strimlitbook.reader import read_ipynb
+from streamlit_card import card
+import streamlit_tags as tags
+
+
+# session related function
+def display_gen_nb():
+    # # load user's notebook as json
+    # byte_nb = st.session_state.gen_uploaded_file
+    # json_nb = json.loads(byte_nb)
+
+    # dump it locally 
+    # with open('dump_PLBART_documented.ipynb', 'w+', encoding='utf-8-sig') as json_dump:
+    #     json.dump(json_nb, json_dump)  
+
+
+    nb = read_ipynb('dump_PLBART_documented.ipynb')
+    nb.display()
+    
+
+
 
 
 # '''TODO : 
 #  prep help strings 
-#  implement models
+#  DOM AND TECH INTO SESSION !!!!!
 # '''
 
 DUMP_PATH_COM = r'DEMO'
-RUN_PATH = r'..\Classification_Task\notebooks\scripts\run.py'
-
+CLASS_RUN_PATH = r'..\Classification_Task\notebooks\scripts\run.py'
+DOCGEN_RUN_PATH = r'..\DocGen_Task\scripts\terminal_run.py'
 
 
 # page config
@@ -23,7 +43,7 @@ st.set_page_config(
 )
 
 # sidebar
-st.sidebar.markdown("# Upload your notebook Page🎉")
+st.sidebar.markdown("# Upload your notebook Page")
 
 
 # session state initializing
@@ -37,7 +57,7 @@ if st.session_state.uploaded_file == None:
         du.switch_page('demo')
 
 else:
-
+    st.write(st.session_state.documented)
     indent, top_class_but, top_doc_but, top_go_but = st.columns([2, 5, 4, 1], gap='small')
 
     # back button
@@ -64,13 +84,11 @@ else:
             top_go_button = st.button('Go!')
     
   
-
- 
-
+###### Classification
 
     # classify by domain
     if ('Domain' in classify) and (len(classify) == 1) and (top_go_button):
-        os.system('python ' + RUN_PATH + ' ' + 'dump.json ' + '--class domain >> file.txt')
+        os.system('python ' + CLASS_RUN_PATH + ' ' + 'dump.json ' + '--class domain >> file.txt')
         with open('file.txt') as f:
             contents = str(f.readlines()[-1])
         
@@ -79,7 +97,8 @@ else:
         '''
         ---
         '''
-        st.write("Your notebook's domain is : ", dom)
+        # st.write("Your notebook's domain is : ", dom)
+        st.metric(label='Domain', value=dom)
         '''
         ---
         '''
@@ -88,7 +107,7 @@ else:
 
     # classify by technique
     elif ('Technique' in classify) and (len(classify) == 1) and (top_go_button):
-        os.system('python ' + RUN_PATH + ' ' + 'dump.json ' + '--class technique >> file.txt')
+        os.system('python ' + CLASS_RUN_PATH + ' ' + 'dump.json ' + '--class technique >> file.txt')
         with open('file.txt') as f:
             contents = str(f.readlines()[-1])
 
@@ -97,7 +116,8 @@ else:
         '''
         ---
         '''
-        st.write("Your notebook's technique is : ", tech)
+        # st.write("Your notebook's technique is : ", tech) 
+        st.metric(label='Technique', value=tech)
         '''
         ---
         '''
@@ -105,7 +125,7 @@ else:
 
     # classify by both
     elif ('Technique' in classify) and ('Domain' in classify) and (top_go_button):
-        os.system('python ' + RUN_PATH + ' ' + 'dump.json ' + '--class both >> file.txt')
+        os.system('python ' + CLASS_RUN_PATH + ' ' + 'dump.json ' + '--class both >> file.txt')
         with open('file.txt') as f:
             contents = str(f.readlines()[-1])
 
@@ -114,9 +134,76 @@ else:
         '''
         ---
         '''
-        st.write("Your notebook's domain & technique are : ", dom, ' & ', tech) 
+        # st.write("Your notebook's domain & technique are : ", dom, ' & ', tech) 
+        # st.button(dom, disabled=True)
+        l, r, nada = st.columns([1,1,5])
+        with l:
+            st.metric(label='Domain', value=dom)
+        with r:
+            st.metric(label='Technique', value=tech)
+        
         '''       
         ---
         '''
+    
+    
 
-    du.display_nb()
+    if (gendoc == 'PLBART') and (top_go_button) and not(st.session_state.documented):
+        os.system('python ' + DOCGEN_RUN_PATH + ' ' + 'dump.json')
+        with open('dump_PLBART_documented.ipynb', encoding='utf-8-sig') as doc_nb:
+                
+            if '.json' in str(st.session_state.uploaded_file_name):
+                st.session_state.uploaded_file_name = str(st.session_state.uploaded_file_name).rstrip('.json')
+            elif '.ipynb' in str(st.session_state.uploaded_file_name):
+                st.session_state.uploaded_file_name = str(st.session_state.uploaded_file_name).rstrip('.ipynb')
+
+            c, o, l = st.columns(3)
+            with o:
+                st.write('\n')
+                btn = st.download_button(
+                label="🎉 Download your documented notebook here ! 🎉",
+                data=doc_nb,
+                file_name=str(st.session_state.uploaded_file_name) + '_PLBART_documented.ipynb',
+                mime='application/ipynb+json'
+                )
+        display_gen_nb()
+        st.session_state.documented = True
+
+    if not(st.session_state.documented):
+        du.display_nb()
+    else:
+        with open('dump_PLBART_documented.ipynb', encoding='utf-8-sig') as doc_nb:
+                
+            if '.json' in str(st.session_state.uploaded_file_name):
+                st.session_state.uploaded_file_name = str(st.session_state.uploaded_file_name).rstrip('.json')
+            elif '.ipynb' in str(st.session_state.uploaded_file_name):
+                st.session_state.uploaded_file_name = str(st.session_state.uploaded_file_name).rstrip('.ipynb')
+
+            c, o, l = st.columns(3)
+            with o:
+                st.write('\n')
+                btn = st.download_button(
+                label="🎉 Download your documented notebook here ! 🎉",
+                data=doc_nb,
+                file_name=str(st.session_state.uploaded_file_name) + '_PLBART_documented.ipynb',
+                mime='application/ipynb+json'
+                )
+        display_gen_nb()
+        st.session_state.documented = True
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+

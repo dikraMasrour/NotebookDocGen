@@ -5,6 +5,37 @@ import pandas as pd
 import numpy as np
 import demo_utils as du
 
+
+
+def show_upload_form(session_state):
+    with st.container():
+        # upload icon
+        upload_title = du.load_text('streamlit_awesome-main\\upload_icon.md')
+        st.write(upload_title, unsafe_allow_html=True)
+
+        st.warning("Note : Not all notebooks have a specific Domain and Technique!")
+
+        st.session_state.uploaded_file = st.file_uploader("Please upload a .ipynb file", accept_multiple_files=False, type='ipynb')
+        
+        if st.session_state.uploaded_file != None:
+            st.session_state.uploaded_file_name = st.session_state.uploaded_file.name
+            st.session_state.uploaded_file = st.session_state.uploaded_file.read()
+            st.session_state.upload_submit_button = st.button("Let's go !")
+            if st.session_state.upload_submit_button:
+                st.session_state.documented = False
+                du.switch_page('upload_nb_page')
+
+
+
+
+
+
+
+
+
+
+
+
 # page config
 st.set_page_config(
     page_title="Magic notebook",
@@ -44,7 +75,7 @@ with st.container():
 
 
 if upload_nb == 'Yes !':
-    du.show_upload_form(st.session_state)
+    show_upload_form(st.session_state)
 
 elif upload_nb == "No, I want to use the app's interface":
     st.session_state.addButton = st.button(' ➕ Add code cell')
@@ -66,7 +97,6 @@ elif upload_nb == "No, I want to use the app's interface":
 
             with colr:
                 st.write(st.session_state.codeCells[codecell])
-
 
 
 

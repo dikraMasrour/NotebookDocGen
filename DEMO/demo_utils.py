@@ -38,6 +38,8 @@ def initialize_session(session_state):
         session_state.upload_submit_button = False
     if 'uploaded_file' not in session_state:
         session_state.uploaded_file = None
+    if 'uploaded_file_name' not in session_state:
+        session_state.uploaded_file_name = ' '
     if 'go_back_main' not in session_state:
         session_state.go_back_main = False
     if 'go_back_main02' not in session_state:
@@ -50,6 +52,8 @@ def initialize_session(session_state):
         st.session_state.technique = 'No technique'
     if 'both' not in st.session_state:
         st.session_state.both = 'No domain or technique'
+    if 'documented' not in st.session_state:
+        st.session_state.documented = False
 
 
 def show_upload_form(session_state):
@@ -63,7 +67,7 @@ def show_upload_form(session_state):
         session_state.uploaded_file = st.file_uploader("Please upload a .ipynb file", accept_multiple_files=False, type='ipynb')
         
         if session_state.uploaded_file != None:
-            
+            session_state.uploaded_file_name = session_state.uploaded_file.name
             session_state.uploaded_file = session_state.uploaded_file.read()
             session_state.upload_submit_button = st.button("Let's go !")
             if session_state.upload_submit_button:
@@ -105,3 +109,26 @@ def display_nb():
 
     nb = read_ipynb('dump.json')
     nb.display()
+
+
+
+def display_gen_nb():
+    # # load user's notebook as json
+    # byte_nb = st.session_state.gen_uploaded_file
+    # json_nb = json.loads(byte_nb)
+
+    # dump it locally 
+    # with open('dump_PLBART_documented.ipynb', 'w+', encoding='utf-8-sig') as json_dump:
+    #     json.dump(json_nb, json_dump)  
+
+    with open('dump_PLBART_documented.ipynb', encoding='utf-8-sig') as doc_nb:
+        btn = st.download_button(
+        label="Download your documented notebook here !",
+        data=doc_nb,
+        file_name=str(st.session_state.uploaded_file_name) + '_PLBART_documented.ipynb',
+        mime='application/ipynb+json'
+        )
+
+    nb = read_ipynb('dump_PLBART_documented.ipynb')
+    nb.display()
+    

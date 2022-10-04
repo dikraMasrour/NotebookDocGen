@@ -55,17 +55,11 @@ def remove_commented_cells(notebook):
 
 
 def document_notebook(notebook_file):
-    # print(notebook['cells'][1].get('cell_type'))
-    # print(type(notebook.cells), len(notebook.cells), notebook.cells)
-
-    
-
-    # fname = notebook_file
 
     notebook = nbf.read(notebook_file, as_version=4)
-    new_notebook = remove_commented_cells(notebook)
-    new_notebook = remove_markdown_cells(notebook)
-    code_cells = new_notebook.cells 
+    # new_notebook = remove_commented_cells(notebook)
+    # new_notebook = remove_markdown_cells(new_notebook)
+    code_cells = notebook.cells 
 
     print('Generating documentation using PLBart ...')
     
@@ -74,14 +68,21 @@ def document_notebook(notebook_file):
         if cell.get('cell_type') == 'code':
             # print(code_cells.index(cell), cell)
 
-            doc = generate_doc(cell.get('source'))
+            doc = generate_doc(cell.get('source'))[0]
+            doc.source = '\U0001FA84' + doc.source 
             # print(doc)
-            new_notebook.cells.insert(code_cells.index(cell), doc)
+            
+            notebook.cells.insert(code_cells.index(cell), doc)
             # break
             
-    filename = notebook_file + 'PLBART_documented.ipynb' 
+    
+    if '.json' in str(notebook_file):
+        notebook_file = str(notebook_file).rstrip('.json')
+    elif '.ipynb' in str(notebook_file):
+        notebook_file = str(notebook_file).rstrip('.ipynb')
 
-    nbf.write(new_notebook, filename, version=nbf.NO_CONVERT)
+    filename = notebook_file + '_PLBART_documented.ipynb' 
+    nbf.write(notebook, filename)
     print('Documenting the notebook : DONE')
     return filename
 
@@ -91,7 +92,6 @@ def document_code_cell(code_series):
 
     doc_list = []
     for code in code_series:
-        print(code)
         if is_all_commented(str(code)):
             doc_list.append('commented')
         

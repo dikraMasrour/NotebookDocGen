@@ -5,3 +5,76 @@ ran tech part
 ran tech part
 ran dom part
 ('nlp', 'regression')
+ran tech part
+ran dom part
+('nlp', 'regression')
+ran tech part
+(None, 'regression')
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran tech part
+ran dom part
+('nlp', 'regression')
+ran tech part
+ran dom part
+('nlp', 'regression')
+ran tech part
+ran dom part
+('nlp', 'regression')
+ran tech part
+ran dom part
+('nlp', 'regression')
+ran tech part
+ran dom part
+('nlp', 'regression')
+ran tech part
+ran dom part
+('nlp', 'regression')
+ran tech part
+ran dom part
+('nlp', 'regression')
+ran dom part
+('nlp', None)
+ran tech part
+ran dom part
+('nlp', 'regression')
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran dom part
+('nlp', None)
+ran tech part
+ran dom part
+('nlp', 'regression')
+ran tech part
+ran dom part
+('nlp', 'regression')
+ran dom part
+('nlp', None)
