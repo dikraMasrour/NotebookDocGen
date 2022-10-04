@@ -1,5 +1,4 @@
 import pickle
-import sklearn
 
 
 FILE_TECH = 'Classification_Task/models/finalized_model_improved_os.sav'
