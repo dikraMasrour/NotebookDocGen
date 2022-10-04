@@ -1,6 +1,6 @@
 import argparse
-import dom_model_invoker as dmi
-import tech_model_invoker as tmi
+import Classification_Task.notebooks.scripts.dom_model_invoker as dmi
+import Classification_Task.notebooks.scripts.tech_model_invoker as tmi
 import preprocessor as prep
 import embedder as e
 
