@@ -50,7 +50,7 @@ du.initialize_session(st.session_state)
 
 
 # title
-magic = du.load_text("streamlit_awesome-main/magic_icon.md")
+magic = du.load_text("/streamlit_awesome-main/magic_icon.md")
 st.write(magic, unsafe_allow_html=True)
 
 # about section
