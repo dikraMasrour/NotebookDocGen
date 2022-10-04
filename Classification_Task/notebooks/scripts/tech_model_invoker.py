@@ -1,7 +1,7 @@
 import pickle
 
 
-FILE_TECH = '../Classification_Task/models/finalized_model_improved_os.sav'
+FILE_TECH = 'Classification_Task/models/finalized_model_improved_os.sav'
 TECH_MODEL = pickle.load(open(FILE_TECH, 'rb'))
 
 
