@@ -32,8 +32,8 @@ def display_gen_nb():
 # '''
 
 DUMP_PATH_COM = r'DEMO'
-CLASS_RUN_PATH = r'..\Classification_Task\notebooks\scripts\run.py'
-DOCGEN_RUN_PATH = r'..\DocGen_Task\scripts\terminal_run.py'
+CLASS_RUN_PATH = r'../Classification_Task/notebooks/scripts/run.py'
+DOCGEN_RUN_PATH = r'../DocGen_Task/scripts/terminal_run.py'
 
 
 # page config
@@ -166,7 +166,7 @@ else:
 
             c, o, l = st.columns(3)
             with o:
-                st.write('\n')
+                st.write('/n')
                 btn = st.download_button(
                 label="🎉 Download your documented notebook here ! 🎉",
                 data=doc_nb,
@@ -188,7 +188,7 @@ else:
 
             c, o, l = st.columns(3)
             with o:
-                st.write('\n')
+                st.write('/n')
                 btn = st.download_button(
                 label="🎉 Download your documented notebook here ! 🎉",
                 data=doc_nb,
