@@ -10,7 +10,7 @@ import demo_utils as du
 def show_upload_form(session_state):
     with st.container():
         # upload icon
-        upload_title = du.load_text('streamlit_awesome-main/upload_icon.md')
+        upload_title = du.load_text('DEMO/streamlit_awesome-main/upload_icon.md')
         st.write(upload_title, unsafe_allow_html=True)
 
         st.warning("Note : Not all notebooks have a specific Domain and Technique!")
@@ -50,14 +50,14 @@ du.initialize_session(st.session_state)
 
 
 # title
-magic = du.load_text("/streamlit_awesome-main/magic_icon.md")
+magic = du.load_text("DEMO/streamlit_awesome-main/magic_icon.md") 
 st.write(magic, unsafe_allow_html=True)
 
 # about section
 with st.expander("About the app"):
 
     st.markdown("No time to comment all your code cells ? Need a quick way to organise your notebooks by domains and techniques used? We've got you covered !")
-    github_icon = du.load_text('streamlit_awesome-main/github_icon.md')
+    github_icon = du.load_text('DEMO/streamlit_awesome-main/github_icon.md')
     st.write(github_icon, unsafe_allow_html=True)
 
 

@@ -63,7 +63,7 @@ def initialize_session(session_state):
 def show_upload_form(session_state):
     with st.container():
         # upload icon
-        upload_title = load_text('streamlit_awesome-main/upload_icon.md')
+        upload_title = load_text('DEMO/streamlit_awesome-main/upload_icon.md')
         st.write(upload_title, unsafe_allow_html=True)
 
         st.warning("Note : Not all notebooks have a specific Domain and Technique!")
