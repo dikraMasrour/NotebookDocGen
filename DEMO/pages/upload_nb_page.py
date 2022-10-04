@@ -28,8 +28,8 @@ def display_gen_nb():
 # '''
 
 DUMP_PATH_COM = r'DEMO'
-CLASS_RUN_PATH = r'classification_task/scripts/run.py'
-DOCGEN_RUN_PATH = r'docgen_task/scripts/terminal_run.py'
+CLASS_RUN_PATH = r'DEMO/classification_task/scripts/run.py'
+DOCGEN_RUN_PATH = r'DEMO/docgen_task/scripts/terminal_run.py'
 
 
 # page config
