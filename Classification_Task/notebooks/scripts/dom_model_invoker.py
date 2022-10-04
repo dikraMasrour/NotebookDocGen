@@ -1,4 +1,6 @@
 import pickle
+from sklearn.linear_model import LogisticRegression
+
 
 FILE_DOM = 'Classification_Task/models/logr_domain_classification_OS_90.sav'
 DOM_MODEL = pickle.load(open(FILE_DOM, 'rb'))
