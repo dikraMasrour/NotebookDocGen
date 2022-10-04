@@ -1,6 +1,4 @@
 import streamlit as st
-import os
-import streamlit_ace as st_ace
 import json
 from strimlitbook.reader import read_ipynb
 

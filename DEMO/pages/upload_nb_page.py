@@ -1,11 +1,7 @@
 import streamlit as st
 import demo_utils as du
-import json
 import os
-import streamlit_ace as st_ace
 from strimlitbook.reader import read_ipynb
-from streamlit_card import card
-import streamlit_tags as tags
 
 
 # session related function

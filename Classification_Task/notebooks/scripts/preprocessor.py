@@ -11,9 +11,9 @@ import pathlib
 import re
 import mdtex2html
 import pyparsing
-from langdetect import detect, DetectorFactory, detect_langs
+from langdetect import detect, DetectorFactory
 from bs4 import BeautifulSoup
-from cleantext import clean, cleantext
+from cleantext import clean
 
 
 def check_ipynb(file_path):

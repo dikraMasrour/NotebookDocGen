@@ -1,8 +1,6 @@
 from random import random
 from streamlit_ace import st_ace
 import streamlit as st
-import pandas as pd
-import numpy as np
 import demo_utils as du
 
 
