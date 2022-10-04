@@ -1,9 +1,8 @@
 import argparse
-import preprocessor as prep
-import embedder as e
 import dom_model_invoker as dmi
 import tech_model_invoker as tmi
-
+import preprocessor as prep
+import embedder as e
 
 '''
 - pass notebook to preprocessor as json in args + test if cells are a list + test if nb is .ipynb + test if english nb
