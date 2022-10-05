@@ -43,14 +43,14 @@ As for the tools used, we respectively applied the pre-trained **CodeBERT** mode
 All these features are showcased in a Streamlit web application offering users the opportunity to test and explore them.
 
 
-<p align="right">(<a href="#readme-top">⬆️</a>)</p>
+<p align="right"><a href="#readme-top">⬆</a></p>
 
 ## Contributors
 
 - [dikraMasrour](https://github.com/dikraMasrour)
 - [D-Zineb](https://github.com/D-Zineb)
 
-<p align="right">(<a href="#readme-top">⬆️</a>)</p>
+<p align="right"><a href="#readme-top">⬆</a></p>
 
 ## Features
 
@@ -58,7 +58,7 @@ All these features are showcased in a Streamlit web application offering users t
 - Classification of the notebooks by ML techniques : **Regression** , **Classification** and **Clustering**.
 - Automatic generation of documentation for individual code cells for a notebook.
 
-<p align="right">(<a href="#readme-top">⬆️</a>)</p>
+<p align="right"><a href="#readme-top">⬆</a></p>
 
 ## Tech Stack
 
@@ -68,13 +68,13 @@ All these features are showcased in a Streamlit web application offering users t
 
 **Deployement :** Streamlit
 
-<p align="right">(<a href="#readme-top">⬆️</a>)</p>
+<p align="right"><a href="#readme-top">⬆</a></p>
 
 ## Demo
 
 [Link]()
 
-<p align="right">(<a href="#readme-top">⬆️</a>)</p>
+<p align="right"><a href="#readme-top">⬆</a></p>
 
 ## Classification Task
 
@@ -107,7 +107,7 @@ Embed **332605** markdown and code cells using ***codeBert*** .
 
 - [Final_Classification_Dataset]()
 
-<p align="right">(<a href="#readme-top">⬆️</a>)</p>
+<p align="right"><a href="#readme-top">⬆</a></p>
 
 
 ## Documentation generation Task
@@ -142,7 +142,7 @@ By first use of PLBART model without finetunning , we got an Overall *Mean bert_
 ### Link to our dataset
 - [Final_DocGen_Dataset]()
 
-<p align="right">(<a href="#readme-top">⬆️</a>)</p>
+<p align="right"><a href="#readme-top">⬆</a></p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/dikraMasrour/NotebookDocGen.svg?style=for-the-badge
 [contributors-url]: https://github.com/dikraMasrour/NotebookDocGen/graphs/contributors
