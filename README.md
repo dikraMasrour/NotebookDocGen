@@ -14,23 +14,23 @@
     <li><a href="#Description">Description</a></li>
     <li><a href="#Contributors">Contributors</a></li>
     <li><a href="#Features">Features</a></li>
-    <li><a href="#Tech Stack">Tech Stack</a></li>
+    <li><a href="#Tech-Stack">Tech Stack</a></li>
     <li><a href="#Demo">Demo</a></li>
-    <li><a href="#Classification Task">Classification Task</a>
+    <li><a href="#Classification-Task">Classification Task</a>
         <ul>
-            <li><a href="#Data Collection">Data Collection</a></li>
-            <li><a href="#Data Cleaning and preprocessing">Data Cleaning and preprocessing</a></li>
-            <li><a href="#Embedding using codeBert">Embedding using codeBert</a></li>
-            <li><a href="#Classification experiements">Classification experiements</a></li>
+            <li><a href="#Data-Collection">Data Collection</a></li>
+            <li><a href="#Data-Cleaning-and-preprocessing">Data Cleaning and preprocessing</a></li>
+            <li><a href="#Embedding-using-codeBert">Embedding using codeBert</a></li>
+            <li><a href="#Classification-experiements">Classification experiements</a></li>
       </ul>
     </li>
-    <li><a href="#Documentation generation Task">Documentation generation Task</a>
+    <li><a href="#Documentation-generation-Task">Documentation generation Task</a>
         <ul>
-            <li><a href="#Data Collection">Data Collection</a></li>
-            <li><a href="#Data Cleaning and preprocessing">Data Cleaning and preprocessing</a></li>
-            <li><a href="#Data transformation">Data transformation</a></li>
+            <li><a href="#Data-Collection">Data Collection</a></li>
+            <li><a href="#Data-Cleaning-and-preprocessing">Data Cleaning and preprocessing</a></li>
+            <li><a href="#Data-transformation">Data transformation</a></li>
             <li><a href="#PLBART">PLBART</a></li>
-            <li><a href="#Pairs construction">Pairs construction</a></li>
+            <li><a href="#Pairs-construction">Pairs construction</a></li>
       </ul>
     </li>
   </ol>
