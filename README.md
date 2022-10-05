@@ -29,8 +29,8 @@
             <li><a href="#Data-Collection">Data Collection</a></li>
             <li><a href="#Data-Cleaning-and-preprocessing">Data Cleaning and preprocessing</a></li>
             <li><a href="#Data-transformation">Data transformation</a></li>
-            <li><a href="#PLBART">PLBART</a></li>
             <li><a href="#Pairs-construction">Pairs construction</a></li>
+            <li><a href="#PLBART">PLBART</a></li>
       </ul>
     </li>
   </ol>
