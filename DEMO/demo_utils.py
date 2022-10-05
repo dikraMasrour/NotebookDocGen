@@ -3,7 +3,13 @@ import os
 import streamlit_ace as st_ace
 import json
 from strimlitbook.reader import read_ipynb
+import torch
+from transformers import AutoTokenizer, AutoModel, pipeline
+from transformers import PLBartForConditionalGeneration, PLBartTokenizer
 
+
+PLBARTOKENIZER = PLBartTokenizer.from_pretrained("uclanlp/plbart-python-en_XX", src_lang="python", tgt_lang="en_XX")
+PLBARTMODEL = PLBartForConditionalGeneration.from_pretrained("uclanlp/plbart-python-en_XX")
 
 
 def switch_page(page_name: str):
@@ -54,10 +60,14 @@ def initialize_session(session_state):
         st.session_state.both = 'No domain or technique'
     if 'documented' not in st.session_state:
         st.session_state.documented = False
+    if 'doc_displayed' not in st.session_state:
+        st.session_state.doc_displayed = False
     if 'domain' not in st.session_state:
         st.session_state.domain = None
     if 'technique' not in st.session_state:
         st.session_state.technique = None
+    if 'classified' not in st.session_state:
+        st.session_state.classified = False
 
 
 def show_upload_form(session_state):

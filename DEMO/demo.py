@@ -7,6 +7,8 @@ import demo_utils as du
 
 
 
+
+
 def show_upload_form(session_state):
     with st.container():
         # upload icon
@@ -93,12 +95,16 @@ elif upload_nb == "No, I want to use the app's interface":
         with st.container() as c: 
             coll, colr = st.columns([4,2])
             with coll:
-                code =  st_ace(placeholder=str(codecell), language='python', height=80, auto_update=True)
+                code =  st_ace(placeholder=str(codecell), language='python', height=80)
             
             st.session_state.codeCells[codecell] = code
 
             with colr:
-                st.write(st.session_state.codeCells[codecell])
+                if len(code) != 0:
+                    inputs = du.PLBARTOKENIZER(code, return_tensors="pt")
+                    translated_tokens = du.PLBARTMODEL.generate(**inputs, decoder_start_token_id=du.PLBARTOKENIZER.lang_code_to_id["en_XX"])
+                    documentation = (du.PLBARTOKENIZER.batch_decode(translated_tokens, skip_special_tokens=True)[0])
+                    st.write(documentation)
 
 
 
