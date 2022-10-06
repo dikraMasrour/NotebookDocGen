@@ -176,13 +176,9 @@ else:
 
             c, o, l = st.columns(3)
             with o:
-<<<<<<< HEAD
                 st.write('\n')
                 st.write('\n')
                 st.write('\n')
-=======
-                st.write('/n')
->>>>>>> e9bbc9b5278c466bd6edc7b87c9d7f1005dbc9e2
                 btn = st.download_button(
                 label="🎉 Download your documented notebook here ! 🎉",
                 data=doc_nb,
@@ -221,13 +217,9 @@ else:
 
             c, o, l = st.columns(3)
             with o:
-<<<<<<< HEAD
                 st.write('\n')
                 st.write('\n')
                 st.write('\n')
-=======
-                st.write('/n')
->>>>>>> e9bbc9b5278c466bd6edc7b87c9d7f1005dbc9e2
                 btn = st.download_button(
                 label="🎉 Download your documented notebook here ! 🎉",
                 data=doc_nb,
