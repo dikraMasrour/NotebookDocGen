@@ -28,8 +28,8 @@ def display_gen_nb():
 # '''
 
 DUMP_PATH_COM = r'DEMO'
-CLASS_RUN_PATH = r'DEMO/classification_task/scripts/run.py'
-DOCGEN_RUN_PATH = r'DEMO/docgen_task/scripts/terminal_run.py'
+CLASS_RUN_PATH = r'classification_task/scripts/run.py'
+DOCGEN_RUN_PATH = r'docgen_task/scripts/terminal_run.py'
 
 
 # page config
@@ -55,6 +55,7 @@ if st.session_state.uploaded_file == None:
 else:
     # st.write(st.session_state.documented)
     st.session_state.doc_displayed = False
+    st.session_state.classified = False
     indent, top_class_but, top_doc_but, top_go_but = st.columns([2, 5, 4, 1], gap='small')
 
     # back button
@@ -154,7 +155,7 @@ else:
     
 ###### Doc Gen
     if (gendoc == 'PLBART') and (top_go_button):
-        if (st.session_state.domain != None) and (st.session_state.technique != None) : 
+        if (st.session_state.domain != None) and (st.session_state.technique != None): 
             l, r = st.columns(2)
             with l:
                 st.metric(label='Domain', value=st.session_state.domain, delta='Predicted')
