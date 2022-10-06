@@ -74,7 +74,6 @@ def document_notebook(notebook_file):
             notebook.cells.insert(code_cells.index(cell), doc)
             # break
             
-            
     
     if '.json' in str(notebook_file):
         notebook_file = str(notebook_file).rstrip('.json')
