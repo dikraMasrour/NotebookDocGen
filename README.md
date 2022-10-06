@@ -90,6 +90,7 @@ All these features are showcased in a Streamlit web application offering users t
 
 - Remove non-english, non-python and duplicate notebooks .
 - Parse JSON notebooks into Dataframe containing notebooks content and  tag.
+- Delete raw cells.
 - Clean the Data by removing punctuation, special characters, spelling checker, non-python code ,emojis ...
 
 ### Embedding using codeBert
@@ -121,6 +122,7 @@ Embed **332605** markdown and code cells using ***codeBert*** .
 
 - Remove non-english and non-python notebooks .
 - Parse JSON notebooks into Dataframe containing notebooks content and  tag.
+- Delete raw cells.
 - Clean the Data by removing special characters, spelling checker, non-python code ,emojis ... While being careful to keep punctuation .
 - Create markdown and code pairs .
 
