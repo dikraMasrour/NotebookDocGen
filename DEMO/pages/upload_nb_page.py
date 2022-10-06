@@ -130,7 +130,10 @@ else:
 
     # classify by both
     elif ('Technique' in classify) and ('Domain' in classify) and (top_go_button):
-        os.system('python ' + CLASS_RUN_PATH + ' ' + 'dump.json ' + '--class both >> file.txt')
+        if (st.session_state.domain == None) or (st.session_state.technique == None): 
+            os.system('python ' + CLASS_RUN_PATH + ' ' + 'dump.json ' + '--class both >> file.txt')
+        
+        
         with open('file.txt') as f:
             contents = str(f.readlines()[-1])
 
@@ -155,15 +158,15 @@ else:
     
 ###### Doc Gen
     if (gendoc == 'PLBART') and (top_go_button):
-        if (st.session_state.domain != None) and (st.session_state.technique != None): 
-            l, r = st.columns(2)
-            with l:
-                st.metric(label='Domain', value=st.session_state.domain, delta='Predicted')
-            with r:
-                st.metric(label='Technique', value=st.session_state.technique, delta='Predicted')
+        # if (st.session_state.domain != None) and (st.session_state.technique != None): 
+        #     l, r = st.columns(2)
+        #     with l:
+        #         st.metric(label='Domain', value=st.session_state.domain, delta='Predicted')
+        #     with r:
+        #         st.metric(label='Technique', value=st.session_state.technique, delta='Predicted')
 
-        elif st.session_state.domain != None: st.metric(label='Domain', value=st.session_state.domain, delta='Predicted')
-        elif st.session_state.technique != None: st.metric(label='Technique', value=st.session_state.technique, delta='Predicted')
+        # elif st.session_state.domain != None: st.metric(label='Domain', value=st.session_state.domain, delta='Predicted')
+        # elif st.session_state.technique != None: st.metric(label='Technique', value=st.session_state.technique, delta='Predicted')
 
 
         if not(st.session_state.documented):
@@ -190,21 +193,21 @@ else:
         display_gen_nb()
         st.session_state.documented = True
         st.session_state.doc_displayed = True
-
+        # st.session_state.classified = False
 
     if not(st.session_state.documented):
         du.display_nb()
 
-    elif not(st.session_state.doc_displayed) and (st.session_state.documented) and not(st.session_state.classified):
-        if (st.session_state.domain != None) and (st.session_state.technique != None) : 
-            l, r = st.columns(2)
-            with l:
-                st.metric(label='Domain', value=st.session_state.domain, delta='Predicted')
-            with r:
-                st.metric(label='Technique', value=st.session_state.technique, delta='Predicted')
+    elif not(st.session_state.doc_displayed) and (st.session_state.documented):
+        # if (st.session_state.domain != None) and (st.session_state.technique != None) : 
+        #     l, r = st.columns(2)
+        #     with l:
+        #         st.metric(label='Domain', value=st.session_state.domain, delta='Predicted')
+        #     with r:
+        #         st.metric(label='Technique', value=st.session_state.technique, delta='Predicted')
 
-        elif st.session_state.domain != None: st.metric(label='Domain', value=st.session_state.domain, delta='Predicted')
-        elif st.session_state.technique != None: st.metric(label='Technique', value=st.session_state.technique, delta='Predicted')
+        # elif st.session_state.domain != None: st.metric(label='Domain', value=st.session_state.domain, delta='Predicted')
+        # elif st.session_state.technique != None: st.metric(label='Technique', value=st.session_state.technique, delta='Predicted')
 
 
 
