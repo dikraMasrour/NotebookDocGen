@@ -72,7 +72,9 @@ All these features are showcased in a Streamlit web application offering users t
 
 ## Demo
 
-[Link]()
+#### Using the UI interface
+[01-NotebookDocGen_Demo_NoUpload.webm](https://user-images.githubusercontent.com/79920322/194432009-bae1e612-9713-45c5-84d6-710d5a6ce97c.webm)
+
 
 <p align="right"><a href="#readme-top">⬆</a></p>
 
