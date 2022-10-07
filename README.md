@@ -75,6 +75,18 @@ All these features are showcased in a Streamlit web application offering users t
 #### Using the UI interface
 [01-NotebookDocGen_Demo_NoUpload.webm](https://user-images.githubusercontent.com/79920322/194432009-bae1e612-9713-45c5-84d6-710d5a6ce97c.webm)
 
+#### Domain classification + PLBART DocGen
+![domain](https://user-images.githubusercontent.com/79920322/194541093-1343a91a-b1bf-4627-abcb-71271c06e846.gif)
+
+
+#### Technique classification + PLBART DocGen
+
+![technique](https://user-images.githubusercontent.com/79920322/194541138-d8c4618f-29a9-410a-a3a4-9f2b56245a66.gif)
+
+#### Domain&Technique classification 
+
+![dom_tech](https://user-images.githubusercontent.com/79920322/194541152-690f42db-46cb-4aac-a6be-256d39a6607f.gif)
+
 
 <p align="right"><a href="#readme-top">⬆</a></p>
 
