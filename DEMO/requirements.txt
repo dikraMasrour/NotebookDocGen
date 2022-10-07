@@ -16,3 +16,4 @@ streamlit_tags==1.2.8
 torch==1.12.1
 transformers==4.22.0
 scikit-learn
+sentencepiece==0.1.97
