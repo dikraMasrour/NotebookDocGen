@@ -1,6 +1,6 @@
 beautifulsoup4==4.11.1
 cleantext==1.1.4
-gradio==3.3
+gradio==3.34.0
 langdetect==1.0.9
 mdtex2html==1.2.0
 nbformat==5.1.3
